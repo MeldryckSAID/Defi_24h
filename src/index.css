@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@font-face {
+    font-family: 'made_saonararegular';
+    src: url('/src/assets/font/madesaonara_400-webfont.woff2') format('woff2'),
+         url('/src/assets/font/madesaonara_400-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'made_saonara_2regular';
+    src: url('/src/assets/font/madesaonara2_400-webfont.woff2') format('woff2'),
+         url('/src/assets/font/madesaonara2_400-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'athenaregular';
+    src: url('/src/assets/font/athena-regular_personal_use_only-webfont.woff2') format('woff2'),
+         url('/src/assets/font/athena-regular_personal_use_only-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'made_okine_sans_personal_usLt';
+    src: url('/src/assets/font/madeokinesanspersonaluse-light-webfont.woff2') format('woff2'),
+         url('/src/assets/font/madeokinesanspersonaluse-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'made_okine_sans_personal_usRg';
+    src: url('/src/assets/font/madeokinesanspersonaluse-regular-webfont.woff2') format('woff2'),
+         url('/src/assets/font/madeokinesanspersonaluse-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'made_okine_sans_personal_usBd';
+    src: url('/src/assets/font/madeokinesanspersonaluse-bold-webfont.woff2') format('woff2'),
+         url('/src/assets/font/madeokinesanspersonaluse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'made_okine_sans_personal_usMd';
+    src: url('/src/assets/font/madeokinesanspersonaluse-medium-webfont.woff2') format('woff2'),
+         url('/src/assets/font/madeokinesanspersonaluse-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
