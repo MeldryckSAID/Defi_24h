@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import Logo from "./svg/logo.vue";
+//import Logo from "./svg/logo.vue";
 const menuVisible = ref(true);
 console.log("menu fermer", menuVisible);
 console.log("menu ouvert", !menuVisible);
@@ -11,7 +11,7 @@ console.log("menu ouvert", !menuVisible);
     <!-- Menu responsive -->
 
     <div
-      class="fixed h-screen w-screen overflow-y-hidden bg-main-blue"
+      class="fixed h-screen w-screen overflow-y-hidden  bg-main-blue"
       :class="{ hidden: menuVisible }"
     >
       <div class="mt-4 flex justify-start">
@@ -25,8 +25,8 @@ console.log("menu ouvert", !menuVisible);
       </div>
       <div class="flex justify-center">
         <div class="ml-8 mt-8 flex flex-col text-left athena text-2xl">
-          <router-link class="hover:text-main-beige text-white my-6" to="/"
-            >Acceuil
+          <router-link class="hover:border-main-beige  text-white my-6" to="/"
+            >Accueil 
           </router-link>
 
           <router-link class="hover:text-main-beige text-white my-6" to="/gal"
@@ -71,25 +71,25 @@ console.log("menu ouvert", !menuVisible);
         <div class="flex justify-center pt-3">
           <div class="flex justify-evenly">
             <router-link
-              class="hover:text-main-beige text-xl mx-4 text-black"
+              class="hover:border-dark-blue hover:border-b-2 text-xl mx-4 text-black"
               to="/gal"
               >Galerie
             </router-link>
 
             <router-link
-              class="hover:text-main-beige text-xl mx-4 text-black"
+              class="hover:border-dark-blue hover:border-b-2 text-xl mx-4 text-black"
               to="/cla"
               >Classement
             </router-link>
 
             <router-link
-              class="hover:text-main-beige text-xl mx-4 text-black"
+              class="hover:border-dark-blue hover:border-b-2 text-xl mx-4 text-black"
               to="/who"
               >Qui sommes-nous</router-link
             >
 
             <router-link
-              class="hover:text-main-beige text-xl mx-4 text-black"
+              class="hover:border-dark-blue hover:border-b-2 text-xl mx-4 text-black"
               to="/cont"
               >Contact</router-link
             >
