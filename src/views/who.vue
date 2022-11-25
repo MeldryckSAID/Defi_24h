@@ -311,7 +311,7 @@ import f from "/src/components/f.vue";
           </div>
         </div>
         <div
-          class="hidden lg:grid lg:grid-rows-2 lg:grid-cols-2 lg:justify-items-center"
+          class="hidden lg:grid lg:grid-rows-1 lg:grid-cols-2 lg:justify-items-center"
         >
           <!-- LUKA -->
           <div class="flex justify-center">
