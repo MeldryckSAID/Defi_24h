@@ -8,32 +8,37 @@ import f from "/src/components/f.vue";
       <!-- qui sommes nous  -->
       <div>
         <div
-          class="flex py-4 items-center justify-evenly lg:justify-start gap-2"
+          class="flex mb-9 py-4 items-center justify-center   "
         >
           <div>
-            <h1 class="athena text-3xl text-dark-blue pl-3">
+            <h1 class="athena text-3xl mb-3 text-dark-blue pl-3">
               Qui sommes nous ?
             </h1>
-          </div>
-          <div>
-            <div
-              class="border-2 w-12 lg:w-64 bg-dark-blue border-dark-blue"
-            ></div>
+            <div>
+              <div class="border-2 w-3/4 bg-dark-blue border-dark-blue"></div>
+            </div>
           </div>
         </div>
       </div>
       <!-- le defie -->
       <div>
-        <div class="flex py-4 items-center justify-evenly gap-2">
-          <div>
-            <div
-              class="border-2 w-32 lg:w-64 bg-dark-blue border-dark-blue"
-            ></div>
-          </div>
-          <div>
-            <h1 class="athena text-3xl text-dark-blue pl-3">Le défie 24h</h1>
+        <!-- titre -->
+        <div>
+          <div
+            class="flex ml-5 mb-9 py-4 items-center  justify-start  "
+          >
+            <div>
+              <h1 class="athena text-3xl mb-3 text-dark-blue pl-3">
+               Le défie 24h ? 
+              </h1>
+              <div>
+                <div class="border-2 w-3/4 bg-dark-blue border-dark-blue"></div>
+              </div>
+            </div>
+
           </div>
         </div>
+        
         <p class="okiner px-3 text-left">
           Étudiants en 2ème année de MMI, notre objectif commun est d’acquérir
           le plus de connaissances possible en communication, création
@@ -49,18 +54,25 @@ import f from "/src/components/f.vue";
       </div>
       <!-- lequipe -->
       <div>
-        <div
-          class="flex py-4 items-center justify-evenly  gap-2"
-        >
-          <div>
-            <h1 class="athena text-3xl text-dark-blue pl-3">L'équipe</h1>
-          </div>
-          <div>
-            <div
-              class="border-2 w-32 lg:w-64 bg-dark-blue border-dark-blue"
-            ></div>
+        
+        
+         <!-- titre -->
+        <div>
+          <div
+            class="flex ml-5 mb-9 py-4 items-center  justify-start  "
+          >
+            <div>
+              <h1 class="athena text-3xl mb-3 text-dark-blue pl-3">
+             L'équipe
+              </h1>
+              <div>
+                <div class="border-2 w-3/4 bg-dark-blue border-dark-blue"></div>
+              </div>
+            </div>
+
           </div>
         </div>
+
         <p class="okiner px-3 text-left">
           Notre équipe se décompose en trois domaines distincts. <br />
           <br />

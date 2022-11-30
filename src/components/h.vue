@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
+import { RouterLink, RouterView } from "vue-router";
 //import Logo from "./svg/logo.vue";
 const menuVisible = ref(true);
 console.log("menu fermer", menuVisible);
@@ -11,7 +12,8 @@ console.log("menu ouvert", !menuVisible);
     <!-- Menu responsive -->
 
     <div
-      class="fixed h-screen w-screen overflow-y-hidden  bg-main-blue"
+      class="fixed h-screen w-screen overflow-y-hidden bg-main-blue"
+      v-on:click="menuVisible = !menuVisible"
       :class="{ hidden: menuVisible }"
     >
       <div class="mt-4 flex justify-start">
@@ -25,29 +27,45 @@ console.log("menu ouvert", !menuVisible);
       </div>
       <div class="flex justify-center">
         <div class="ml-8 mt-8 flex flex-col text-left athena text-2xl">
-          <router-link class="hover:border-main-beige  text-white my-6" to="/"
-            >Accueil 
+          <router-link
+            class="hover:border-main-beige text-white my-6"
+            to="/"
+            :class="{ 'text-main-beige': $route.name === 'home' }"
+            >Accueil
           </router-link>
 
-          <router-link class="hover:text-main-beige text-white my-6" to="/gal"
+          <router-link
+            class="hover:text-main-beige text-white my-6"
+            to="/gal"
+            :class="{ 'text-main-beige': $route.name === 'galerie' }"
             >Galerie
           </router-link>
 
-          <router-link class="hover:text-main-beige text-white my-6" to="/cla"
+          <router-link
+            class="hover:text-main-beige text-white my-6"
+            to="/cla"
+            :class="{ 'text-main-beige': $route.name === 'classement' }"
             >Classement
           </router-link>
 
-          <router-link class="hover:text-main-beige text-white my-6" to="/who"
+          <router-link
+            class="hover:text-main-beige text-white my-6"
+            to="/who"
+            :class="{ 'text-main-beige': $route.name === 'who' }"
             >Qui sommes-nous
           </router-link>
 
-          <router-link class="hover:text-main-beige text-white my-6" to="/cont"
+          <router-link
+            class="hover:text-main-beige text-white my-6"
+            to="/cont"
+            :class="{ 'text-main-beige': $route.name === 'contact' }"
             >Contact
           </router-link>
 
           <router-link
             class="hover:text-main-beige text-white my-6"
             to="/account"
+            :class="{ 'text-main-beige': $route.name === 'account' }"
             >Mon compte
           </router-link>
         </div>
@@ -65,7 +83,11 @@ console.log("menu ouvert", !menuVisible);
             <!-- <Logo class="w-52 h-52"/> -->
           </RouterLink>
           <RouterLink class="col-start-3 items-end" to="/account">
-            <img class="w-12 pt-4" src="../assets/svg/user.svg" alt="User acount" />
+            <img
+              class="w-12 pt-4"
+              src="../assets/svg/user.svg"
+              alt="User acount"
+            />
           </RouterLink>
         </div>
         <div class="flex justify-center pt-3">

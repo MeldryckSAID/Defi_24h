@@ -6,16 +6,14 @@ import f from "/src/components/f.vue";
 <template>
   <main class="h-screen">
     <div>
-      <div
-        class="flex py-4 items-center justify-evenly lg:justify-center gap-2"
-      >
-        <div>
-          <h1 class="athena text-3xl text-dark-blue pl-3">Classement</h1>
-        </div>
-        <div>
-          <div
-            class="border-2 w-24 lg:w-64 bg-dark-blue border-dark-blue"
-          ></div>
+      <div>
+        <div class="flex mb-9 py-4 items-center justify-center">
+          <div>
+            <h1 class="athena text-3xl mb-3 text-dark-blue pl-3">classement</h1>
+            <div>
+              <div class="border-2 w-3/4 bg-dark-blue border-dark-blue"></div>
+            </div>
+          </div>
         </div>
       </div>
       <p class="okiner font-bold text-xl m-3 my-5">
