@@ -8,7 +8,7 @@ console.log("menu ouvert", !menuVisible);
 </script>
 
 <template>
-  <div class="z-10 top-0">
+  <div class="relative z-50 inset-0">
     <!-- Menu responsive -->
 
     <div
@@ -79,8 +79,10 @@ console.log("menu ouvert", !menuVisible);
           class="grid grid-rows-1 grid-cols-3 justify-items-center border-black border-b-2 pb-4"
         >
           <RouterLink class="col-start-2" to="/">
-            <img class="w-52" src="../assets/svg/logo.svg" alt="Notre Logo" />
-            <!-- <Logo class="w-52 h-52"/> -->
+            
+              <img  class="w-28" v-if="$route.name != 'inscription'" src="../assets/svg/logo.svg" alt="Notre Logo" />
+              <img  class="w-40" v-if="$route.name === 'inscription'" src="../assets/svg/logo_collab.svg" alt="Notre Logo en collaboration" />
+           
           </RouterLink>
           <RouterLink class="col-start-3 items-end" to="/account">
             <img
@@ -127,7 +129,10 @@ console.log("menu ouvert", !menuVisible);
           class="grid grid-rows-1 grid-cols-3 justify-items-center border-black border-b-2 pb-4"
         >
           <RouterLink class="col-start-2" to="/">
-            <img class="w-52" src="../assets/svg/logo.svg" alt="Notre Logo" />
+            <RouterLink    to="/">
+              <img  class="w-28" v-if="$route.name != 'inscription'" src="../assets/svg/logo.svg" alt="Notre Logo" />
+              <img  class="w-40" v-if="$route.name === 'inscription'" src="../assets/svg/logo_collab.svg" alt="Notre Logo en collaboration" />
+            </RouterLink>
           </RouterLink>
           <RouterLink class="col-start-3 items-end" to="/account">
             <img src="../assets/svg/user.svg" alt="User acount" />
@@ -175,8 +180,9 @@ console.log("menu ouvert", !menuVisible);
             />
           </button>
           <div>
-            <RouterLink to="/">
-              <img class="w-28" src="../assets/svg/logo.svg" alt="Notre Logo" />
+            <RouterLink    to="/">
+              <img  class="w-28" v-if="$route.name != 'inscription'" src="../assets/svg/logo.svg" alt="Notre Logo" />
+              <img  class="w-40" v-if="$route.name === 'inscription'" src="../assets/svg/logo_collab.svg" alt="Notre Logo en collaboration" />
             </RouterLink>
           </div>
         </div>

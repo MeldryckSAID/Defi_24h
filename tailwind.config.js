@@ -16,8 +16,8 @@ module.exports = {
         meldryck: "url('/src/components/equipe/Meldryck.jpg')",
         theo: "url('/src/components/equipe/Theo.jpg')",
         amphib: "url('/src/components/jpg/amphib.png')",
+        zebre: "url('/src/assets/jpg/fond_zebre_b.jpg')",
       },
-      
     },
   },
   plugins: [],

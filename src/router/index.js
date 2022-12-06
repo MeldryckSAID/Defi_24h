@@ -18,7 +18,7 @@ const router = createRouter({
     { path: "/cont", name: "contact", component: cont },
     { path: "/who", name: "who", component: who },
     { path: "/gal", name: "galerie", component: gal },
-    { path: "/account", name: "account", component: account },
+    { path: "/account", name: "inscription", component: account },
     { path: "/mention", name: "mention", component: mention },
   ],
 });

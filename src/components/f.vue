@@ -4,14 +4,34 @@ import { ref } from "vue";
 
 <template>
   <footer class="bg-main-blue h-1/4 py-5">
-    <h2 class="athena text-main-beige m-5 text-center text-3xl">
-      Festival 24H
-    </h2>
-    <a
-      class="text-white text-lg m-3 flex justify-center"
-      href="mailto:mmidefi24h@gmail.com"
-      >mmidefi24h@gmail.com</a
-    >
+    <div class="flex flex-col justify-center items-center">
+      <h2
+        v-if="$route.name != 'inscription'"
+        class="athena text-main-beige m-5 text-center text-3xl"
+      >
+        Festival 24H
+      </h2>
+
+      <img
+        class="w-fit"
+        v-if="$route.name === 'inscription'"
+        src="../assets/svg/collab_collor.svg"
+        alt="Notre Logo en collaboration"
+      />
+      <div class="flex flex-row">
+        <a
+          class="text-white text-lg m-3 flex justify-center"
+          href="mailto:mmi25ans@gmail.com"
+          >mmi25ans@gmail.com</a
+        >
+        <a
+          v-if="$route.name === 'inscription'"
+          class="text-main-beige text-lg m-3 flex justify-center"
+          href="mailto:mmidefi24h@gmail.com"
+          >mmidefi24h@gmail.com</a
+        >
+      </div>
+    </div>
     <!-- footer  -->
     <div class="flex flex-col lg:hidden md:flex-row md:justify-evenly">
       <ul class="pl-4 py-4">
@@ -43,7 +63,7 @@ import { ref } from "vue";
           alt="Notre Instagram"
         />
         <img
-          class=" w-7 lg:w-12 md:w-14"
+          class="w-7 lg:w-12 md:w-14"
           src="../assets/svg/facebook.svg"
           alt="Notre Facebook"
         />
