@@ -45,7 +45,7 @@ import boutonwhite from "../components/bouton/boutonwhite.vue";
             <figcaption
               class="okiner text-xl absolute z-10 w-full bottom-5 text-white"
             >
-              <div>
+              <div class="m-2 md:m-4 lg:m-8">
                 <div class="w-fit">
                   <h2
                     class="text-xl md:text-3xl lg:text-5xl text-left okiner text-white"

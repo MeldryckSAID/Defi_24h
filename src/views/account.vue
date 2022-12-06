@@ -202,16 +202,7 @@ import Boutonb from "../components/bouton/boutonb.vue";
                 >
               </div>
             </fieldset>
-            <!-- <div class="flex flex-row gap-1 my-1">
-              <input type="radio" class="border-2 checked:bg-blue-500" />
-              <p class="text-sm okinel text-black">
-                ACTUELLEMENT ÉTUDIANT (MMI 1/2 ou LPWD)
-              </p>
-            </div>
-            <div class="flex flex-row gap-1 my-1">
-              <input type="radio" class="border-2 checked:bg-blue-500" />
-              <p class="text-sm okinel text-black">UN ANCIEN ÉTUDIANT</p>
-            </div> -->
+            
           </div>
           <!-- fin -->
 
