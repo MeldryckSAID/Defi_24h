@@ -12,7 +12,7 @@ import { ref } from "vue";
       href="mailto:mmidefi24h@gmail.com"
       >mmidefi24h@gmail.com</a
     >
-
+    <!-- footer  -->
     <div class="flex flex-col lg:hidden md:flex-row md:justify-evenly">
       <ul class="pl-4 py-4">
         <li>
@@ -43,9 +43,9 @@ import { ref } from "vue";
           alt="Notre Instagram"
         />
         <img
-          class="lg:w-12 md:w-14"
-          src="../assets/svg/discorde.svg"
-          alt="Notre Discord"
+          class=" w-7 lg:w-12 md:w-14"
+          src="../assets/svg/facebook.svg"
+          alt="Notre Facebook"
         />
         <img
           class="lg:w-14 md:w-14"
@@ -55,6 +55,7 @@ import { ref } from "vue";
       </div>
     </div>
 
+    <!-- footer pc -->
     <div
       class="lg:flex lg:flex-col lg:justify-around lg:items-center hidden md:hidden"
     >
