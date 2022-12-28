@@ -5,10 +5,10 @@ import h from "../src/components/h.vue";
 
 <template>
   <header>
-    <h class="mt-0 w-full  " />
+    <h class="mt-0 w-full" />
   </header>
   <main>
-    <RouterView />
+    <RouterView  />
   </main>
 </template>
 

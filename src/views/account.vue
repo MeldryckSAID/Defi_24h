@@ -96,6 +96,16 @@ import Boutonb from "../components/bouton/boutonb.vue";
       </div>
     </div> -->
 
+    <div
+      class="h-[0.5px] -z-50 line fixed rotate-45 origin-[0] inset-y-10 w-full bg-black"
+    ></div>
+    <div
+      class="h-[0.5px] -z-50 line2 fixed rotate-[145deg] origin-[0] w-full inset-y-0 inset-x-1/4 bg-black"
+    ></div>
+    <div
+      class="h-[0.5px] -z-50 line3 fixed rotate-[145deg] origin-[0] w-full inset-y-1/2 inset-x-full bg-black"
+    ></div>
+
     <div class="flex justify-center items-center">
       <div class="bg-zebre m-9 p-8">
         <div class="bg-white rounded-lg p-3">
@@ -196,13 +206,11 @@ import Boutonb from "../components/bouton/boutonb.vue";
                   name="selector"
                   value="ancien"
                 />
-                <label class="mx-2 
-                text-sm okiner text-black" for="ancien"
+                <label class="mx-2 text-sm okiner text-black" for="ancien"
                   >UN ANCIEN ÉTUDIANT</label
                 >
               </div>
             </fieldset>
-            
           </div>
           <!-- fin -->
 

@@ -79,10 +79,18 @@ console.log("menu ouvert", !menuVisible);
           class="grid grid-rows-1 grid-cols-3 justify-items-center border-black border-b-2 pb-4"
         >
           <RouterLink class="col-start-2" to="/">
-            
-              <img  class="w-28" v-if="$route.name != 'inscription'" src="../assets/svg/logo.svg" alt="Notre Logo" />
-              <img  class="w-40" v-if="$route.name === 'inscription'" src="../assets/svg/logo_collab.svg" alt="Notre Logo en collaboration" />
-           
+            <img
+              class="w-28"
+              v-if="$route.name != 'inscription'"
+              src="../assets/svg/logo.svg"
+              alt="Notre Logo"
+            />
+            <img
+              class="w-40"
+              v-if="$route.name === 'inscription'"
+              src="../assets/svg/logo_collab.svg"
+              alt="Notre Logo en collaboration"
+            />
           </RouterLink>
           <RouterLink class="col-start-3 items-end" to="/account">
             <img
@@ -129,9 +137,19 @@ console.log("menu ouvert", !menuVisible);
           class="grid grid-rows-1 grid-cols-3 justify-items-center border-black border-b-2 pb-4"
         >
           <RouterLink class="col-start-2" to="/">
-            <RouterLink    to="/">
-              <img  class="w-28" v-if="$route.name != 'inscription'" src="../assets/svg/logo.svg" alt="Notre Logo" />
-              <img  class="w-40" v-if="$route.name === 'inscription'" src="../assets/svg/logo_collab.svg" alt="Notre Logo en collaboration" />
+            <RouterLink to="/">
+              <img
+                class="w-28"
+                v-if="$route.name != 'inscription'"
+                src="../assets/svg/logo.svg"
+                alt="Notre Logo"
+              />
+              <img
+                class="w-40"
+                v-if="$route.name === 'inscription'"
+                src="../assets/svg/logo_collab.svg"
+                alt="Notre Logo en collaboration"
+              />
             </RouterLink>
           </RouterLink>
           <RouterLink class="col-start-3 items-end" to="/account">
@@ -180,9 +198,19 @@ console.log("menu ouvert", !menuVisible);
             />
           </button>
           <div>
-            <RouterLink    to="/">
-              <img  class="w-28" v-if="$route.name != 'inscription'" src="../assets/svg/logo.svg" alt="Notre Logo" />
-              <img  class="w-40" v-if="$route.name === 'inscription'" src="../assets/svg/logo_collab.svg" alt="Notre Logo en collaboration" />
+            <RouterLink to="/">
+              <img
+                class="w-28"
+                v-if="$route.name != 'inscription'"
+                src="../assets/svg/logo.svg"
+                alt="Notre Logo"
+              />
+              <img
+                class="w-40"
+                v-if="$route.name === 'inscription'"
+                src="../assets/svg/logo_collab.svg"
+                alt="Notre Logo en collaboration"
+              />
             </RouterLink>
           </div>
         </div>

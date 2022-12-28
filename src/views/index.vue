@@ -61,11 +61,13 @@ import boutonwhite from "../components/bouton/boutonwhite.vue";
                   projet durant 24 heures de défis <br />
                   et d’animations
                 </p>
-                <div class="flex justify-end m-3">
-                  <boutonwhite class="lg:text-3xl md:text-2xl"
-                    >Inscription</boutonwhite
-                  >
-                </div>
+                <router-link to="/account"
+                  ><div class="flex justify-end m-3">
+                    <boutonwhite class="lg:text-3xl md:text-2xl"
+                      >Inscription</boutonwhite
+                    >
+                  </div>
+                </router-link>
               </div>
             </figcaption>
           </div>

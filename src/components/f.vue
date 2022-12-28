@@ -56,19 +56,19 @@ import { ref } from "vue";
           </RouterLink>
         </li>
       </ul>
-      <div class="pl-4 py-4 flex flex-row">
+      <div class="pl-4 py-4 gap-3 flex flex-row">
         <img
-          class="lg:w-10 md:w-14"
+          class=" w-12 lg:w-16 md:w-12"
           src="../assets/svg/instagram.svg"
           alt="Notre Instagram"
         />
         <img
-          class="w-7 lg:w-12 md:w-14"
+          class="w-10 lg:w-14 md:w-10"
           src="../assets/svg/facebook.svg"
           alt="Notre Facebook"
         />
         <img
-          class="lg:w-14 md:w-14"
+          class=" w-12 lg:w-16 md:w-12"
           src="../assets/svg/logo-mmi.svg"
           alt="Logo département MMi"
         />
@@ -81,17 +81,17 @@ import { ref } from "vue";
     >
       <div class="pl-4 py-4 flex flex-row gap-2">
         <img
-          class="lg:w-10 md:w-14"
+          class="lg:w-16 md:w-14"
           src="../assets/svg/instagram.svg"
           alt="Notre Instagram"
         />
         <img
-          class="lg:w-10 md:w-14"
+          class="lg:w-14 md:w-14"
           src="../assets/svg/facebook.svg"
           alt="Notre Facebook"
         />
         <img
-          class="lg:w-10 md:w-14"
+          class="lg:w-16 md:w-14"
           src="../assets/svg/logo-mmi.svg"
           alt="Logo département MMi"
         />
