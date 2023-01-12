@@ -8,6 +8,11 @@ import gal from "../views/galerie.vue";
 import account from "../views/account.vue";
 import mention from "../views/mention.vue";
 
+import buro from "../views/gal/buro.vue";
+import lorem from "../views/gal/lorem.vue";
+import Sacimder from "../views/gal/Sacimder.vue";
+import lapin from "../views/gal/lapin.vue";
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -20,6 +25,10 @@ const router = createRouter({
     { path: "/gal", name: "galerie", component: gal },
     { path: "/account", name: "inscription", component: account },
     { path: "/mention", name: "mention", component: mention },
+    { path: "/buro", name: "buro", component: buro },
+    { path: "/lorem", name: "lorem", component: lorem },
+    { path: "/Sacimder", name: "Sacimder", component: Sacimder },
+    { path: "/lapin", name: "lapin", component: lapin },
   ],
 });
 

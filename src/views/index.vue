@@ -191,7 +191,7 @@ import boutonwhite from "../components/bouton/boutonwhite.vue";
       <!-- partenaires -->
 
       <div class="ml-6">
-        <div class="flex mb-9 py-4 items-center justify-center">
+        <div class="flex mb-9 py-4 ">
           <div>
             <h1
               class="athena text-xl md:text-3xl lg:text-5xl text-dark-blue pl-3"
