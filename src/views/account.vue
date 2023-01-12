@@ -5,108 +5,7 @@ import Boutonb from "../components/bouton/boutonb.vue";
 
 <template>
   <main>
-    <!-- <div class="flex justify-center items-center">
-      <div class="flex justify-center mb-9 md:m-14 lg:m-14">
-        <img
-          class="relative z-0 w-5/6"
-          src="../assets/jpg/fond_zebre_b.jpg"
-          alt="joli fond zebre"
-        />
-      </div>
-      <div class="bg-white absolute z-10 p-8">
-        <h2 class="text-center okiner text-3xl">Inscription</h2>
-        <div class="relative z-20 flex flex-col md:p-40 w-3/4">
-          <div class="flex flex-col justify-center">
-            <label class="okiner" for="Prénom">Prénom </label>
-            <textarea
-              class="border-2 rounded-2xl border-gray-300 placeholder:text-slate-500 placeholder:okinel"
-              placeholder="Prénom"
-              name="Prénom"
-              id=""
-              cols="1"
-              rows="1"
-            ></textarea>
-          </div>
-          <div class="flex flex-col justify-center m-2">
-            <label class="okiner" for="Nom">Nom </label>
-            <textarea
-              class="border-2 rounded-2xl border-gray-300 placeholder:text-slate-500 placeholder:okinel"
-              placeholder="Nom"
-              name="Nom"
-              id=""
-              cols="1"
-              rows="1"
-            ></textarea>
-          </div>
-          <div class="flex flex-col justify-center m-2">
-            <label class="okiner" for="Mail">Mail </label>
-
-            <textarea
-              class="border-2 rounded-2xl border-gray-300 placeholder:text-slate-500 placeholder:okinel"
-              placeholder="Mail"
-              name="Mail"
-              id=""
-              cols="1"
-              rows="1"
-            ></textarea>
-          </div>
-        </div>
-
-        <div class="flex flex-col">
-          <label class="okiner font-bold" for="Souhait"> Je souhaite</label>
-          <div class="flex flex-row gap-1 my-1">
-            <input type="checkbox" class="border-2 checked:bg-blue-500" />
-            <p class="text-sm okinel text-black">
-              PARTICIPER À LA SOIRÉE DES 25 ANS MMI
-            </p>
-          </div>
-          <div class="flex flex-row gap-1 my-1">
-            <input type="checkbox" class="border-2 checked:bg-blue-500" />
-            <p class="text-sm okinel text-black">PARTICIPER AU DÉFI 24H</p>
-          </div>
-          <div class="flex flex-row gap-1 my-1">
-            <input type="checkbox" class="border-2 checked:bg-blue-500" />
-            <p class="text-sm okinel text-black">
-              Revoir et discuter avec les anciens <br />
-              étudiants et les professeurs <br />
-              LORS DU DÉFI 24H
-            </p>
-          </div>
-          <div class="flex flex-row gap-1 my-1">
-            <input type="checkbox" class="border-2 checked:bg-blue-500" />
-            <p class="text-sm okinel text-black">
-              ÊTRE BÉNÉVOLE LORS DU DÉFI 24H
-            </p>
-          </div>
-        </div>
-
-        <div class="flex flex-col">
-          <label class="okiner font-bold" for="Souhait"> JE SUIS :</label>
-          <div class="flex flex-row gap-1 my-1">
-            <input type="checkbox" class="border-2 checked:bg-blue-500" />
-            <p class="text-sm okinel text-black">
-              ACTUELLEMENT ÉTUDIANT (MMI 1/2 ou LPWD)
-            </p>
-          </div>
-          <div class="flex flex-row gap-1 my-1">
-            <input type="checkbox" class="border-2 checked:bg-blue-500" />
-            <p class="text-sm okinel text-black">UN ANCIEN ÉTUDIANT</p>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-    <div
-      class="h-[0.5px] -z-50 line fixed rotate-45 origin-[0] inset-y-10 w-full bg-black"
-    ></div>
-    <div
-      class="h-[0.5px] -z-50 line2 fixed rotate-[145deg] origin-[0] w-full inset-y-0 inset-x-1/4 bg-black"
-    ></div>
-    <div
-      class="h-[0.5px] -z-50 line3 fixed rotate-[145deg] origin-[0] w-full inset-y-1/2 inset-x-full bg-black"
-    ></div>
-
-    <div class="flex justify-center items-center">
+    <div class="flex flex-col justify-center items-center">
       <div class="bg-zebre m-9 p-8">
         <div class="bg-white rounded-lg p-3">
           <!-- champs -->
@@ -219,6 +118,9 @@ import Boutonb from "../components/bouton/boutonb.vue";
           </div>
         </div>
       </div>
+      <router-link to="/conexion">
+        <boutonb class="mb-9 p-8">J'ai un compte</boutonb>
+      </router-link>
     </div>
   </main>
   <footer>

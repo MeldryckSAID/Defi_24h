@@ -7,11 +7,13 @@ import who from "../views/who.vue";
 import gal from "../views/galerie.vue";
 import account from "../views/account.vue";
 import mention from "../views/mention.vue";
+import conexion from "../views/conexion.vue";
 
 import buro from "../views/gal/buro.vue";
 import lorem from "../views/gal/lorem.vue";
 import Sacimder from "../views/gal/Sacimder.vue";
 import lapin from "../views/gal/lapin.vue";
+import zinzin from "../views/gal/zinzin.vue";
 
 
 const router = createRouter({
@@ -29,6 +31,8 @@ const router = createRouter({
     { path: "/lorem", name: "lorem", component: lorem },
     { path: "/Sacimder", name: "Sacimder", component: Sacimder },
     { path: "/lapin", name: "lapin", component: lapin },
+    { path: "/zinzin", name: "zinzin", component: zinzin },
+    { path: "/conexion", name: "conexion", component: conexion },
   ],
 });
 

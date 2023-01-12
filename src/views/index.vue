@@ -204,42 +204,45 @@ import boutonwhite from "../components/bouton/boutonwhite.vue";
             </div>
           </div>
         </div>
+
+        <div>
         <div class="grid grid-cols-2 grid-rows-7">
           <figure class="col-start-1 row-start-1">
-            <img src="../components/partenaire/mmi.png" alt="mmi" />
+            <img class="w-2/6 " src="../components/partenaire/mmi.png" alt="mmi" />
             <figcaption></figcaption>
           </figure>
           <figure class="col-start-2 row-start-2">
-            <img src="../components/partenaire/bde.png" alt="bde" />
+            <img class="w-2/6" src="../components/partenaire/bde.png" alt="bde" />
             <figcaption></figcaption>
           </figure>
           <figure class="col-start-1 row-start-3">
-            <img src="../components/partenaire/crous.png" alt="Crous" />
+            <img class="w-2/6" src="../components/partenaire/crous.png" alt="Crous" />
             <figcaption></figcaption>
           </figure>
 
           <figure class="col-start-2 row-start-4">
-            <img src="../components/partenaire/PMA.jpg" alt="Pma" />
+            <img class="w-2/6" src="../components/partenaire/PMA.jpg" alt="Pma" />
             <figcaption></figcaption>
           </figure>
           <figure class="col-start-1 row-start-5">
-            <img src="../components/partenaire/memo.png" alt="memo" />
+            <img class="w-2/6" src="../components/partenaire/memo.png" alt="memo" />
             <figcaption></figcaption>
           </figure>
           <figure class="col-start-2 row-start-6">
-            <img src="../components/partenaire/chiken.png" alt="Pma" />
+            <img class="w-2/6" src="../components/partenaire/chiken.png" alt="Pma" />
             <figcaption></figcaption>
           </figure>
-          <figure class="col-start-1 row-start-7">
-            <img src="../components/partenaire/mmi25_logo 1.png" alt="Pma" />
+          <figure  class="col-start-1 row-start-7">
+            <img class="w-2/6" src="../components/partenaire/mmi25_logo 1.png" alt="Pma" />
             <figcaption></figcaption>
           </figure>
         </div>
         <div class="grid grid-cols-2 mb-4 grid-rows-7">
           <figure class="col-start-2 row-start-1">
-            <img src="../components/partenaire/universite.jpg" alt="Pma" />
+            <img class="w-2/6" src="../components/partenaire/universite.jpg" alt="Pma" />
             <figcaption></figcaption>
           </figure>
+        </div>
         </div>
       </div>
     </div>

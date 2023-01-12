@@ -27,7 +27,7 @@ import F from "/src/components/f.vue";
       </div>
     </div>
 
-    <div class="md:grid md:grid-rows-3 md:grid-cols-2 my-5">
+    <div class="md:grid md:grid-rows-3 md:grid-cols-2 lg:grid-rows-2 lg:grid-cols-3  my-5">
       <div>
         <figure>
          <router-link class="" to="/lorem">
@@ -71,7 +71,7 @@ import F from "/src/components/f.vue";
 
       <div>
         <figure>
-          <router-link class="" to="/">
+          <router-link class="" to="/zinzin">
             <img
               class="w-full"
               src="../assets/webp/LesProjets4.webp"

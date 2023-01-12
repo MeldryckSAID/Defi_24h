@@ -14,7 +14,7 @@ import { ref } from "vue";
 
       <img
         class="w-fit"
-        v-if="$route.name === 'inscription'"
+        v-if="($route.name === 'inscription', 'account')"
         src="../assets/svg/collab_collor.svg"
         alt="Notre Logo en collaboration"
       />
@@ -25,7 +25,7 @@ import { ref } from "vue";
           >mmi25ans@gmail.com</a
         >
         <a
-          v-if="$route.name === 'inscription'"
+          v-if="($route.name === 'inscription', 'account')"
           class="text-main-beige text-lg m-3 flex justify-center"
           href="mailto:mmidefi24h@gmail.com"
           >mmidefi24h@gmail.com</a
@@ -58,7 +58,7 @@ import { ref } from "vue";
       </ul>
       <div class="pl-4 py-4 gap-3 flex flex-row">
         <img
-          class=" w-12 lg:w-16 md:w-12"
+          class="w-12 lg:w-16 md:w-12"
           src="../assets/svg/instagram.svg"
           alt="Notre Instagram"
         />
@@ -68,7 +68,7 @@ import { ref } from "vue";
           alt="Notre Facebook"
         />
         <img
-          class=" w-12 lg:w-16 md:w-12"
+          class="w-12 lg:w-16 md:w-12"
           src="../assets/svg/logo-mmi.svg"
           alt="Logo département MMi"
         />
