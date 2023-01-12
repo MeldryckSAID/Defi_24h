@@ -1,6 +1,65 @@
 <script setup>
 import f from "/src/components/f.vue";
 import Boutonb from "../components/bouton/boutonb.vue";
+
+import {getAuth, signInWithEmailAndPassword, signOut, } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-auth.js";
+
+
+export default{
+    data(){
+        return {
+            user:{
+                email:null,
+                password
+            },
+            message:null
+        }
+    },
+    mounted(){
+        let user = getAuth().currentUser;
+        if(user){
+            this.user=user;
+            this.message= "user deja co :" + this.user.email;
+        }else{
+            this.message="user non co ;"+this.user.email
+        }
+    },
+        methods:{
+            onCnx(){
+                //se connecter avec un mots de pass
+                signInWithEmailAndPassword(getAuth(),this.user.email , this.user.password)
+                .then((response)=>{
+                    console.log('user connect', response.user);
+                    this.user= response.user;
+                    this.message= "user connecter:" +this.user.email
+                })
+                .catch((error)=>{
+                    //erreur co
+                     console.log('erreur connect', error);
+                     this.message = "Erreur deco ";
+                })
+            },
+
+            onDcnx(){
+                //se deco
+                signOut(getAuth())
+                .then(response=>{
+                    this.user = getAuth().currentUser;
+                    this.user= {
+                        email:null,
+                        password:null
+                    };
+                    console.log('user  déconnect', this.user);
+                     this.message = "user non co ";
+
+                })
+                .catch(error=>{
+                      console.log('erreur  déconnect', error);
+                })
+            }
+        }
+    
+}
 </script>
 
 <template>

@@ -3,8 +3,6 @@ import { ref } from "vue";
 import { RouterLink, RouterView } from "vue-router";
 //import Logo from "./svg/logo.vue";
 const menuVisible = ref(true);
-console.log("menu fermer", menuVisible);
-console.log("menu ouvert", !menuVisible);
 </script>
 
 <template>
