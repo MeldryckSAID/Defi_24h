@@ -1,6 +1,5 @@
-<script setup>
+<script>
 import f from "/src/components/f.vue";
-import Boutonb from "../components/bouton/boutonb.vue";
 
 import {
   getAuth,
@@ -13,7 +12,7 @@ export default {
     return {
       user: {
         email: null,
-        password,
+        password: null,
       },
       message: null,
     };
@@ -63,6 +62,10 @@ export default {
 };
 </script>
 
+<script setup>
+import Boutonb from "../components/bouton/boutonb.vue";
+</script>
+
 <template>
   <main>
     <div class="flex flex-col justify-center items-center">
@@ -75,39 +78,37 @@ export default {
               <div class="flex flex-col justify-center m-2">
                 <label class="okiner" for="Mail">Mail </label>
 
-                <textarea
+                <input
+                  type="text"
                   class="border-2 rounded-2xl border-gray-300 placeholder:text-slate-500 placeholder:okinel"
-                  placeholder="Mail"
-                  name="Mail"
-                  v-model="user.email"
+                  placeholder="mail"
+                  name="mail"
+                   v-model="user.email"
                   required
-                  id=""
-                  cols="1"
-                  rows="1"
-                ></textarea>
+                />
               </div>
 
               <div class="flex flex-col justify-center mb-4">
                 <label class="okiner" for="Password">Mots de passe </label>
-                <textarea
+               
+                <input
+                  type="text"
                   class="border-2 rounded-2xl border-gray-300 placeholder:text-slate-500 placeholder:okinel"
                   placeholder="Password"
                   name="Password"
-                  id=""
-                  v-model="user.password"
+                   v-model="user.password"
                   required
-                  cols="1"
-                  rows="1"
-                ></textarea>
+                />
               </div>
             </div>
-
-            <div class="flex justify-center">
-              <boutonb @click="onDcnx" type="submit"> Déconnexion </boutonb>
+            <div class=" flex justify-around">
+            <div class="">
+              <boutonb @click="onDcnx()" type="submit"> Déconnexion </boutonb>
             </div>
 
-            <div class="flex justify-center">
+            <div class="">
               <boutonb type="submit"> Connexion </boutonb>
+            </div>
             </div>
           </form>
         </div>

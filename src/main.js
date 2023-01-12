@@ -22,7 +22,7 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const appfirebase = initializeApp(firebaseConfig);
+const appFirebase = initializeApp(firebaseConfig);
 const app = createApp(App);
 
 app.use(router);

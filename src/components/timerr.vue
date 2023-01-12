@@ -14,8 +14,8 @@
   </main>
 </template>
 
-<script lang="ts">
-var deadline = new Date("19 december .2022 13:45:00").getTime();
+<script >
+var deadline = new Date("11 march .2023 13:45:00").getTime();
 
 var now = new Date().getTime;
 
