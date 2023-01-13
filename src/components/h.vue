@@ -6,7 +6,10 @@ const menuVisible = ref(true);
 </script>
 
 <template>
-  <div class="relative z-50 inset-0"  :class="{ ' hidden': $route.name === 'NotFound' }">
+  <div
+    class="relative z-50 inset-0"
+    :class="{ ' hidden': $route.name === 'NotFound' }"
+  >
     <!-- Menu responsive -->
 
     <div
@@ -85,7 +88,7 @@ const menuVisible = ref(true);
             />
             <img
               class="w-40"
-              v-if="$route.name === 'account', 'inscription'"
+              v-if="$route.name === 'account' || $route.name === 'inscription'"
               src="../assets/svg/logo_collab.svg"
               alt="Notre Logo en collaboration"
             />
@@ -138,13 +141,15 @@ const menuVisible = ref(true);
             <RouterLink to="/">
               <img
                 class="w-28"
-               v-if="$route.name != 'inscription' && $route.name != 'account'"
+                v-if="$route.name != 'inscription' && $route.name != 'account'"
                 src="../assets/svg/logo.svg"
                 alt="Notre Logo"
               />
               <img
                 class="w-40"
-                v-if="$route.name === 'account', 'inscription'"
+                v-if="
+                  $route.name === 'account' || $route.name === 'inscription'
+                "
                 src="../assets/svg/logo_collab.svg"
                 alt="Notre Logo en collaboration"
               />
@@ -199,13 +204,15 @@ const menuVisible = ref(true);
             <RouterLink to="/">
               <img
                 class="w-28"
-               v-if="$route.name != 'inscription' && $route.name != 'account'"
+                v-if="$route.name != 'inscription' && $route.name != 'account'"
                 src="../assets/svg/logo.svg"
                 alt="Notre Logo"
               />
               <img
                 class="w-40"
-                v-if="$route.name === 'account', 'inscription'"
+                v-if="
+                  $route.name === 'account' || $route.name === 'inscription'
+                "
                 src="../assets/svg/logo_collab.svg"
                 alt="Notre Logo en collaboration"
               />
