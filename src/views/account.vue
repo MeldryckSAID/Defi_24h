@@ -1,6 +1,8 @@
 <script setup>
 import f from "/src/components/f.vue";
 import Boutonb from "../components/bouton/boutonb.vue";
+
+
 </script>
 
 <template>
@@ -114,7 +116,7 @@ import Boutonb from "../components/bouton/boutonb.vue";
           <!-- fin -->
 
           <div class="flex justify-center">
-            <boutonb> Inscription </boutonb>
+            <boutonb type="submit" id="signup"> Inscription </boutonb>
           </div>
         </div>
       </div>

@@ -21,9 +21,9 @@ export default {
     let user = getAuth().currentUser;
     if (user) {
       this.user = user;
-      this.message = "user deja co :" + this.user.email;
+      this.message = "user deja connecter :" + this.user.email;
     } else {
-      this.message = "user non co ;" + this.user.email;
+      this.message = "user non connecter ;" + this.user.email;
     }
   },
   methods: {
@@ -83,32 +83,40 @@ import Boutonb from "../components/bouton/boutonb.vue";
                   class="border-2 rounded-2xl border-gray-300 placeholder:text-slate-500 placeholder:okinel"
                   placeholder="mail"
                   name="mail"
-                   v-model="user.email"
+                  v-model="user.email"
                   required
                 />
               </div>
 
               <div class="flex flex-col justify-center mb-4">
                 <label class="okiner" for="Password">Mots de passe </label>
-               
+
                 <input
                   type="text"
                   class="border-2 rounded-2xl border-gray-300 placeholder:text-slate-500 placeholder:okinel"
                   placeholder="Password"
                   name="Password"
-                   v-model="user.password"
+                  v-model="user.password"
                   required
                 />
               </div>
             </div>
-            <div class=" flex justify-around">
-            <div class="">
-              <boutonb @click="onDcnx()" type="submit"> Déconnexion </boutonb>
+            <div class="flex place-content-center m-4">
+              <div
+                class="alert alert-warning w-fit text-xs bg-main-beige p-3"
+                role="alert"
+              >
+                {{ message }}
+              </div>
             </div>
+            <div class="flex justify-around">
+              <div class="">
+                <boutonb @click="onDcnx()" type="submit"> Déconnexion </boutonb>
+              </div>
 
-            <div class="">
-              <boutonb type="submit"> Connexion </boutonb>
-            </div>
+              <div class="">
+                <boutonb type="submit"> Connexion </boutonb>
+              </div>
             </div>
           </form>
         </div>
