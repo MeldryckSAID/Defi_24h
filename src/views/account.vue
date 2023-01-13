@@ -1,207 +1,173 @@
 <template>
-  <main>
-    <!--CONNEXION-->
-    <!--CONNEXION-->
-    <!--CONNEXION-->
-    <!--CONNEXION-->
-    <form
-      class="border-4 my-5 md:my-20 border-black bg-white py-10 md:px-20 w-11/12 md:w-2/3 m-auto"
-      @submit.prevent="onCnx()"
-      v-if="formSwitch === false"
-    >
-      <div class="flex flex-col gap-12">
-        <div class="flex flex-col">
-          <label class="mmi-texte">Adresse mail</label>
-          <input
-            type="text"
-            class="bg-white border border-b-4 border-b-black border-white"
-            placeholder="mail"
-            name="mail"
-            v-model="user.email"
-            required
-          />
-        </div>
-        <div class="flex flex-col">
-          <label class="mmi-texte">Mot de passe</label>
-          <input
-            type="password"
-            class="bg-white border border-b-4 border-b-black border-white"
-            placeholder="Password"
-            name="Password"
-            v-model="user.password"
-            required
-          />
-        </div>
+  <!--CONNEXION-->
+  <!--CONNEXION-->
+  <!--CONNEXION-->
+  <!--CONNEXION-->
+  <form
+    class="border-4 my-5 border-black bg-white py-5 px-5 md:px-10 w-11/12 md:w-2/3 m-auto"
+    @submit.prevent="onCnx()"
+    v-if="formSwitch === false"
+  >
+    <!--Images 24h 25 ans mmi-->
+    <section class="flex justify-center items-center my-5 gap-5">
+       <!-- mettre notre logo commun -->
+     
+    </section>
+    <!--Images 24h 25 ans mmi-->
 
-        <div class="flex place-content-center">
-          <div
-            class="alert alert-warning w-fit text-base bg-main-white"
-            role="alert"
-          >
-            {{ message }}
-          </div>
-        </div>
+    <div class="flex flex-col gap-12">
+      <div class="flex flex-col">
+        <label class="font-black">Adresse mail</label>
+        <input
+          type="text"
+          class="bg-white border border-b-4 border-b-black border-white"
+          placeholder="mail"
+          name="mail"
+          v-model="user.email"
+          required
+        />
+      </div>
+      <div class="flex flex-col">
+        <label class="font-black">Mot de passe</label>
+        <input
+          type="password"
+          class="bg-white border border-b-4 border-b-black border-white"
+          placeholder="Password"
+          name="Password"
+          v-model="user.password"
+          required
+        />
+      </div>
 
-        <div class="w-full flex flex-col md:flex-row md:justify-evenly">
-          <Boutonb
-            class="mx-auto bg-black border border-black border-1 p-7 text-2xl md:text-xl lg:text-2xl font-inter text-white font-black rounded-md"
-            type="submit"
-          >
-            Se connecter
-          </Boutonb>
-          <Boutonb
-            class="mx-auto bg-white border border-black border-1 p-7 text-2xl md:text-xl lg:text-2xl font-inter text-black font-black rounded-md"
-            @click="formSwitch = !formSwitch"
-          >
-            Inscription
-          </Boutonb>
-        </div>
-        <Boutonb class="m-auto text-center w-fit underline" @click="onDcnx()">
-          Déconnexion
+      <div class="w-full flex flex-col gap-5 md:flex-row md:justify-evenly">
+        <Boutonb
+          class="mx-auto bg-black border border-black border-1 p-7 text-2xl md:text-xl lg:text-2xl font-inter text-white font-black rounded-md"
+          type="submit"
+        >
+          Se connecter
+        </Boutonb>
+        <Boutonb
+          class="mx-auto bg-white border border-black border-1 p-7 text-2xl md:text-xl lg:text-2xl font-inter text-black font-black rounded-md"
+          @click="formSwitch = !formSwitch"
+        >
+          Inscription
         </Boutonb>
       </div>
-    </form>
 
-    <!--INSCRIPTION-->
-    <!--INSCRIPTION-->
-    <!--INSCRIPTION-->
-    <!--INSCRIPTION-->
-    <form
-      class="border-4 my-5 md:my-20 border-black bg-white py-10 md:px-20 w-11/12 md:w-2/3 m-auto"
-      @submit.prevent="onSignup()"
-      v-if="formSwitch === true"
-    >
-      <!--Images 24h 25 ans mmi-->
-      <section></section>
-      <div class="flex flex-col gap-12">
-        <div class="flex flex-col">
-          <label class="mmi-texte">Adresse mail</label>
-          <input
-            type="text"
-            class="bg-white border border-b-4 border-b-black border-white"
-            placeholder="mail"
-            name="mail"
-            v-model="user.email"
-            required
-          />
-        </div>
-        <div class="flex flex-col">
-          <label class="mmi-texte">Prénom</label>
-          <input
-            type="text"
-            class="bg-white border border-b-4 border-b-black border-white"
-            placeholder="mail"
-            name="mail"
-            v-model="user.email"
-            required
-          />
-        </div>
-        <div class="flex flex-col">
-          <label class="mmi-texte">Mot de passe</label>
-          <input
-            type="password"
-            class="bg-white border border-b-4 border-b-black border-white"
-            placeholder="Password"
-            name="Password"
-            v-model="user.password"
-            required
-          />
-        </div>
-
-        <div class="flex flex-col">
-          <label class="okiner font-bold" for="Souhait"> Je souhaite</label>
-          <div class="flex flex-row gap-1 my-1">
-            <input type="checkbox" class="border-2 checked:bg-blue-500" />
-            <p class="text-sm okinel text-black">
-              PARTICIPER À LA SOIRÉE DES 25 ANS MMI
-            </p>
-          </div>
-          <div class="flex flex-row gap-1 my-1">
-            <input type="checkbox" class="border-2 checked:bg-blue-500" />
-            <p class="text-sm okinel text-black">PARTICIPER AU DÉFI 24H</p>
-          </div>
-          <div class="flex flex-row gap-1 my-1">
-            <input type="checkbox" class="border-2 checked:bg-blue-500" />
-            <p class="text-sm okinel text-black">
-              Revoir et discuter avec les anciens <br />
-              étudiants et les professeurs <br />
-              LORS DU DÉFI 24H
-            </p>
-          </div>
-          <div class="flex flex-row gap-1 my-1">
-            <input type="checkbox" class="border-2 checked:bg-blue-500" />
-            <p class="text-sm okinel text-black">
-              ÊTRE BÉNÉVOLE LORS DU DÉFI 24H
-            </p>
-          </div>
-        </div>
-
-        <div class="flex flex-col">
-          <label class="okiner font-bold" for="Souhait"> JE SUIS :</label>
-
-          <fieldset>
-            <legend>Selectionner votre catégorie:</legend>
-
-            <div>
-              <input type="radio" id="actuel" name="selector" value="actuel" />
-              <label class="mx-2 text-sm okiner text-black" for="actuel"
-                >ACTUELLEMENT ÉTUDIANT (MMI 1/2 ou LPWD)</label
-              >
-            </div>
-
-            <div>
-              <input type="radio" id="ancien" name="selector" value="ancien" />
-              <label class="mx-2 text-sm okiner text-black" for="ancien"
-                >UN ANCIEN ÉTUDIANT</label
-              >
-            </div>
-          </fieldset>
-        </div>
-
-        <div class="flex place-content-center">
-          <div
-            class="alert alert-warning w-fit text-base bg-main-white"
-            role="alert"
-          >
-            {{ message }}
-          </div>
-        </div>
-
-        <div class="w-full flex flex-col md:flex-row md:justify-evenly">
-          <Boutonb
-            class="mx-auto bg-black border border-black border-1 p-7 text-2xl md:text-xl lg:text-2xl font-inter text-white font-black rounded-md"
-            type="submit"
-          >
-            S'inscrire
-          </Boutonb>
-          <Boutonb
-            class="mx-auto bg-jaune border border-1 p-7 text-2xl md:text-xl lg:text-2xl font-inter text-black font-black rounded-md"
-            @click="formSwitch = !formSwitch"
-          >
-            Déjà un compte ?
-          </Boutonb>
+      <div class="flex place-content-center">
+        <div class="alert alert-warning w-fit text-base text-vert" role="alert">
+          {{ message }}
         </div>
       </div>
-    </form>
-  </main>
+
+      <Boutonb
+        class="m-auto text-center w-fit underline text-base"
+        @click.prevent="onDcnx()"
+      >
+        Déconnexion
+      </Boutonb>
+    </div>
+  </form>
+
+  <!--INSCRIPTION-->
+  <!--INSCRIPTION-->
+  <!--INSCRIPTION-->
+  <!--INSCRIPTION-->
+  <form
+    class="border-4 my-5 md:my-20 border-black bg-white py-10 px-5 md:px-20 w-11/12 md:w-2/3 m-auto"
+    @submit.prevent="createAccount()"
+    v-if="formSwitch === true"
+  >
+    <!--Images 24h 25 ans mmi-->
+    <section class="flex justify-center items-center my-5 gap-5">
+      
+      <!-- mettre notre logo commun -->
+      
+    </section>
+    <!--Images 24h 25 ans mmi-->
+
+    <div class="flex flex-col gap-12">
+      <div class="flex flex-col">
+        <label class="font-black">Adresse mail</label>
+        <input
+          type="text"
+          class="bg-white border border-b-4 border-b-black border-white"
+          placeholder="Mail"
+          name="mail"
+          v-model="user.email"
+          required
+        />
+      </div>
+
+      <div class="flex flex-col">
+        <label class="font-black">Mot de passe</label>
+        <input
+          type="password"
+          class="bg-white border border-b-4 border-b-black border-white"
+          placeholder="Mot de passe"
+          name="Password"
+          v-model="user.password"
+          required
+        />
+      </div>
+
+      <div class="w-full flex flex-col gap-5 md:flex-row md:justify-evenly">
+        <Boutonb
+          class="mx-auto bg-black border border-black border-1 p-7 text-2xl md:text-xl lg:text-2xl font-inter text-white font-black rounded-md"
+          type="submit"
+        >
+          S'inscrire
+        </Boutonb>
+        <Boutonb
+          class="mx-auto bg-white border-black border p-7 text-2xl md:text-xl lg:text-2xl font-inter text-black font-black rounded-md"
+          @click="formSwitch = !formSwitch"
+        >
+          Déjà un compte ?
+        </Boutonb>
+      </div>
+
+      <div class="flex place-content-center">
+        <div class="alert alert-warning w-fit text-base text-vert" role="alert">
+          {{ message }}
+        </div>
+      </div>
+    </div>
+  </form>
 
   <footer>
-    <f />
+    <f/>
   </footer>
 </template>
+
+
+
 
 <script setup>
 import Boutonb from "../components/bouton/boutonb.vue";
 import f from "/src/components/f.vue";
+
 </script>
+
 <script>
 import {
-  getAuth,
-  signInWithEmailAndPassword,
-  signOut,
+  getAuth, // Fonction générale d'authentification
+  signInWithEmailAndPassword, // Se connecter avec un email + mot de passe
+  createUserWithEmailAndPassword, // créer un user
+  signOut, // Se deconnecter
 } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-auth.js";
 
+// Fonctions Firestore
+import {
+  getFirestore,
+  collection,
+  addDoc,
+} from "https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js";
+
+
+
+
 export default {
+ 
   props: {
     formSwitch: {
       type: Boolean,
@@ -214,6 +180,8 @@ export default {
       user: {
         email: null,
         password: null,
+        nom: null,
+        prenom: null,
       },
       message: null,
     };
@@ -222,9 +190,9 @@ export default {
     let user = getAuth().currentUser;
     if (user) {
       this.user = user;
-      this.message = "user déjà connecté :" + this.user.email;
+      this.message = "Vous êtes connecté sous : " + this.user.email;
     } else {
-      this.message = "user non connecté :" + this.user.email;
+      this.message = "Connectez-vous.";
     }
   },
   methods: {
@@ -232,29 +200,53 @@ export default {
       //se connecter avec un mots de pass
       signInWithEmailAndPassword(getAuth(), this.user.email, this.user.password)
         .then((response) => {
-          console.log("user connect", response.user);
           this.user = response.user;
-          this.message = "user connecter:" + this.user.email;
+          this.message = "Vous êtes connecté sous : " + this.user.email;
+          this.$router.push("/");
         })
         .catch((error) => {
           //erreur co
-          console.log("erreur connect", error);
-          this.message = "Erreur deco ";
+          this.message = "Erreur connexion :" + error;
         });
     },
 
-    onSignup() {
-      //se connecter avec un mots de pass
-      signInWithEmailAndPassword(getAuth(), this.user.email, this.user.password)
-        .then((response) => {
-          console.log("user connect", response.user);
-          this.user = response.user;
-          this.message = "user connecter:" + this.user.email;
+    createAccount() {
+      // Se connecter avec user et mot de passe
+      createUserWithEmailAndPassword(
+        getAuth(),
+        this.user.email,
+        this.user.password,
+        this.user.nom,
+        this.user.prenom
+      )
+        .then(() => {
+          this.message = "User créé : " + this.user.email;
+
+          signInWithEmailAndPassword(
+            getAuth(),
+            this.user.email,
+            this.user.password
+          ).then((response) => {
+            this.user = response.user;
+            this.message = "Vous êtes connecté sous : " + this.user.email;
+
+            this.$router.push("inscription");
+          });
+
+          /*
+          const firestore = getFirestore();
+          // Base de données (collection)  document users
+          const dbUsers = collection(firestore, "user");
+          const docRef = addDoc(dbUsers, {
+            nom: this.nom,
+            prenom: this.prenom,
+            email: this.email,
+          });
+          */
         })
         .catch((error) => {
-          //erreur co
-          console.log("erreur connect", error);
-          this.message = "Erreur deco ";
+          // Erreur de connexion
+          this.message = "Erreur pour la création du compte : " + error;
         });
     },
 
@@ -267,17 +259,15 @@ export default {
             email: null,
             password: null,
           };
-          console.log("user  déconnect", this.user);
-          this.message = "user non co ";
+          this.message = "Vous êtes déconnecté !";
         })
         .catch((error) => {
-          console.log("erreur  déconnect", error);
+          console.log("erreur  déconnection : ", error);
         });
     },
   },
 };
 </script>
-
 <style>
 .athena {
   font-family: "athenaregular";

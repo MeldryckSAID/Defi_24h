@@ -79,13 +79,13 @@ const menuVisible = ref(true);
           <RouterLink class="col-start-2" to="/">
             <img
               class="w-28"
-              v-if="$route.name != 'inscription'"
+              v-if="$route.name != 'inscription' && $route.name != 'account'"
               src="../assets/svg/logo.svg"
               alt="Notre Logo"
             />
             <img
               class="w-40"
-              v-if="$route.name === 'inscription'"
+              v-if="$route.name === 'account', 'inscription'"
               src="../assets/svg/logo_collab.svg"
               alt="Notre Logo en collaboration"
             />
@@ -138,13 +138,13 @@ const menuVisible = ref(true);
             <RouterLink to="/">
               <img
                 class="w-28"
-                v-if="$route.name != 'inscription'"
+               v-if="$route.name != 'inscription' && $route.name != 'account'"
                 src="../assets/svg/logo.svg"
                 alt="Notre Logo"
               />
               <img
                 class="w-40"
-                v-if="$route.name === 'inscription'"
+                v-if="$route.name === 'account', 'inscription'"
                 src="../assets/svg/logo_collab.svg"
                 alt="Notre Logo en collaboration"
               />
@@ -199,13 +199,13 @@ const menuVisible = ref(true);
             <RouterLink to="/">
               <img
                 class="w-28"
-                v-if="$route.name != 'inscription'"
+               v-if="$route.name != 'inscription' && $route.name != 'account'"
                 src="../assets/svg/logo.svg"
                 alt="Notre Logo"
               />
               <img
                 class="w-40"
-                v-if="$route.name === 'inscription'"
+                v-if="$route.name === 'account', 'inscription'"
                 src="../assets/svg/logo_collab.svg"
                 alt="Notre Logo en collaboration"
               />
