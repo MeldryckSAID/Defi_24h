@@ -28,9 +28,9 @@ import f from "/src/components/f.vue";
             class="flex ml-5 mb-9 py-4 items-center  justify-start  "
           >
             <div>
-              <h1 class="athena text-3xl mb-3 text-dark-blue pl-3">
+              <h2 class="athena text-3xl mb-3 text-dark-blue pl-3">
                Le défie 24h ? 
-              </h1>
+              </h2>
               <div>
                 <div class="border-2 w-3/4 bg-dark-blue border-dark-blue"></div>
               </div>
@@ -62,9 +62,9 @@ import f from "/src/components/f.vue";
             class="flex ml-5 mb-9 py-4 items-center  justify-start  "
           >
             <div>
-              <h1 class="athena text-3xl mb-3 text-dark-blue pl-3">
+              <h2 class="athena text-3xl mb-3 text-dark-blue pl-3">
              L'équipe
-              </h1>
+              </h2>
               <div>
                 <div class="border-2 w-3/4 bg-dark-blue border-dark-blue"></div>
               </div>

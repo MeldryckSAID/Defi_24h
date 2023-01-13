@@ -20,11 +20,11 @@ import boutonwhite from "../components/bouton/boutonwhite.vue";
         <div class="ml-6">
           <div class="flex mb-9 py-4 items-center">
             <div>
-              <h1
+              <h2
                 class="athena text-xl md:text-3xl lg:text-5xl text-dark-blue pl-3"
               >
                 L'évenement
-              </h1>
+              </h2>
 
               <div>
                 <div class="border-2 w-3/4 bg-dark-blue border-dark-blue"></div>
@@ -99,11 +99,11 @@ import boutonwhite from "../components/bouton/boutonwhite.vue";
       <div class="ml-6">
         <div class="flex mb-9 py-2 items-center">
           <div>
-            <h1
+            <h2
               class="athena text-xl md:text-3xl lg:text-5xl text-dark-blue pl-3"
             >
               Le Défi
-            </h1>
+            </h2>
 
             <div>
               <div class="border-2 w-3/4 bg-dark-blue border-dark-blue"></div>
@@ -134,11 +134,11 @@ import boutonwhite from "../components/bouton/boutonwhite.vue";
       <div class="ml-6">
         <div class="flex mb-9 py-4">
           <div>
-            <h1
+            <h2
               class="athena text-xl md:text-3xl lg:text-5xl text-dark-blue pl-3"
             >
               Les animations
-            </h1>
+            </h2>
 
             <div>
               <div class="border-2 w-3/4 bg-dark-blue border-dark-blue"></div>
@@ -160,11 +160,11 @@ import boutonwhite from "../components/bouton/boutonwhite.vue";
       <div class="ml-6">
         <div class="flex mb-9 py-4">
           <div>
-            <h1
+            <h2
               class="athena text-xl md:text-3xl lg:text-5xl text-dark-blue pl-3"
             >
               Programme
-            </h1>
+            </h2>
 
             <div>
               <div class="border-2 w-3/4 bg-dark-blue border-dark-blue"></div>
@@ -193,11 +193,11 @@ import boutonwhite from "../components/bouton/boutonwhite.vue";
       <div class="ml-6">
         <div class="flex mb-9 py-4 ">
           <div>
-            <h1
+            <h2
               class="athena text-xl md:text-3xl lg:text-5xl text-dark-blue pl-3"
             >
               Nos partenaires
-            </h1>
+            </h2>
 
             <div>
               <div class="border-2 w-3/4 bg-dark-blue border-dark-blue"></div>
