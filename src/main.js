@@ -6,6 +6,8 @@ import "./index.css";
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-app.js";
 
+// Import de mitt
+import mitt from "mitt";
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -26,7 +28,12 @@ const firebaseConfig = {
 const appFirebase = initializeApp(firebaseConfig);
 const app = createApp(App);
 
-let signInButton = document.getElementById("signup");
+//let signInButton = document.getElementById("signup");
+
+export const emitter = mitt();
+// créer l'émetteur comme propriété globale
+// de l'application
+app.config.globalProperties.emitter = emitter;
 
 app.use(router);
 

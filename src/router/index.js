@@ -8,6 +8,7 @@ import gal from "../views/galerie.vue";
 import account from "../views/account.vue";
 import mention from "../views/mention.vue";
 import conexion from "../views/conexion.vue";
+import PageNotFound from "../components/PageNotFound.vue";
 
 import buro from "../views/gal/buro.vue";
 import lorem from "../views/gal/lorem.vue";
@@ -27,6 +28,8 @@ const router = createRouter({
     { path: "/gal", name: "galerie", component: gal },
     { path: "/account", name: "inscription", component: account },
     { path: "/mention", name: "mention", component: mention },
+    { name: "NotFound", path: "/:pathMatch(.*)*", component: PageNotFound },
+
     { path: "/buro", name: "buro", component: buro },
     { path: "/lorem", name: "lorem", component: lorem },
     { path: "/Sacimder", name: "Sacimder", component: Sacimder },

@@ -6,7 +6,7 @@ const menuVisible = ref(true);
 </script>
 
 <template>
-  <div class="relative z-50 inset-0">
+  <div class="relative z-50 inset-0"  :class="{ ' hidden': $route.name === 'NotFound' }">
     <!-- Menu responsive -->
 
     <div
@@ -129,7 +129,7 @@ const menuVisible = ref(true);
     </div>
 
     <!-- Menu Tablet -->
-    <div class="mb-5">
+    <div class="mb-5 sm">
       <div class="lg:hidden hidden justify-between md:flex md:flex-col">
         <div
           class="grid grid-rows-1 grid-cols-3 justify-items-center border-black border-b-2 pb-4"

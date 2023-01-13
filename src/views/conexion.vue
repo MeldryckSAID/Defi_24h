@@ -33,6 +33,8 @@ export default {
         .then((response) => {
           console.log("user connect", response.user);
           this.user = response.user;
+          // Emission evenement de connexion
+          emitter.emit("connectUser", { user: this.user });
           this.message = "user connecter:" + this.user.email;
         })
         .catch((error) => {
@@ -53,6 +55,7 @@ export default {
           };
           console.log("user  déconnect", this.user);
           this.message = "user non co ";
+           emitter.emit("deConnectUser", { user: this.user });
         })
         .catch((error) => {
           console.log("erreur  déconnect", error);
