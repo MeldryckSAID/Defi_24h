@@ -2,14 +2,18 @@
 import f from "/src/components/f.vue";
 </script>
 
+<script>
+window.onload = function () {
+  window.scrollTo(0, 0);
+};
+</script>
+
 <template>
   <main class="min-h-screen my-3">
     <div>
       <!-- qui sommes nous  -->
       <div>
-        <div
-          class="flex mb-9 py-4 items-center justify-center   "
-        >
+        <div class="flex mb-9 py-4 items-center justify-center">
           <div>
             <h1 class="athena text-3xl mb-3 text-dark-blue pl-3">
               Qui sommes nous ?
@@ -24,21 +28,18 @@ import f from "/src/components/f.vue";
       <div>
         <!-- titre -->
         <div>
-          <div
-            class="flex ml-5 mb-9 py-4 items-center  justify-start  "
-          >
+          <div class="flex ml-5 mb-9 py-4 items-center justify-start">
             <div>
               <h2 class="athena text-3xl mb-3 text-dark-blue pl-3">
-               Le défie 24h ? 
+                Le défie 24h ?
               </h2>
               <div>
                 <div class="border-2 w-3/4 bg-dark-blue border-dark-blue"></div>
               </div>
             </div>
-
           </div>
         </div>
-        
+
         <p class="okiner px-3 text-left">
           Étudiants en 2ème année de MMI, notre objectif commun est d’acquérir
           le plus de connaissances possible en communication, création
@@ -54,22 +55,15 @@ import f from "/src/components/f.vue";
       </div>
       <!-- lequipe -->
       <div>
-        
-        
-         <!-- titre -->
+        <!-- titre -->
         <div>
-          <div
-            class="flex ml-5 mb-9 py-4 items-center  justify-start  "
-          >
+          <div class="flex ml-5 mb-9 py-4 items-center justify-start">
             <div>
-              <h2 class="athena text-3xl mb-3 text-dark-blue pl-3">
-             L'équipe
-              </h2>
+              <h2 class="athena text-3xl mb-3 text-dark-blue pl-3">L'équipe</h2>
               <div>
                 <div class="border-2 w-3/4 bg-dark-blue border-dark-blue"></div>
               </div>
             </div>
-
           </div>
         </div>
 

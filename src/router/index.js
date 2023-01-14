@@ -19,7 +19,7 @@ import cont from "../views/contact.vue";
 import who from "../views/who.vue";
 import gal from "../views/galerie.vue";
 import account from "../views/account.vue";
-import inscription from "../views/inscription.vue";
+
 import mention from "../views/mention.vue";
 import conexion from "../views/conexion.vue";
 import admin from "../views/admin.vue";
@@ -42,7 +42,7 @@ const router = createRouter({
     { path: "/who", name: "who", component: who },
     { path: "/gal", name: "galerie", component: gal },
     { path: "/account", name: "account", component: account },
-    { path: "/inscription", name: "inscription", component: inscription },
+    
     { path: "/mention", name: "mention", component: mention },
     { name: "NotFound", path: "/:pathMatch(.*)*", component: PageNotFound },
 

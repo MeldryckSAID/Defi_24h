@@ -160,6 +160,9 @@
 </template>
 
 <script>
+window.onload = function () {
+  window.scrollTo(0, 0);
+};
 // Bibliothèque Firestore : import des fonctions
 // Fonctions Firestore
 

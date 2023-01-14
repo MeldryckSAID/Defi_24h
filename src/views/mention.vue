@@ -203,6 +203,12 @@ import f from "/src/components/f.vue";
   </footer>
 </template>
 
+<script>
+window.onload = function () {
+  window.scrollTo(0, 0);
+};
+</script>
+
 <style>
 .athena {
   font-family: "athenaregular";

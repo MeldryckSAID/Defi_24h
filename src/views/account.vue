@@ -61,6 +61,7 @@
 
       <a href="#top" class="m-auto text-center w-fit">
         <Boutonb
+          onclick="location.reload()"
           @click.prevent="onDcnx()"
           class="m-auto text-center w-fit underline text-base"
         >
@@ -273,6 +274,10 @@ import f from "/src/components/f.vue";
 </script>
 
 <script>
+window.onload = function () {
+  window.scrollTo(0, 0);
+};
+
 import {
   getAuth, // Fonction générale d'authentification
   signInWithEmailAndPassword, // Se connecter avec un email + mot de passe

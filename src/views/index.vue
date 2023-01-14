@@ -4,6 +4,12 @@ import F from "/src/components/f.vue";
 import boutonwhite from "../components/bouton/boutonwhite.vue";
 </script>
 
+<script>
+window.onload = function () {
+  window.scrollTo(0, 0);
+};
+</script>
+
 <template>
   <main class="min-h-screen">
     <h1
@@ -191,7 +197,7 @@ import boutonwhite from "../components/bouton/boutonwhite.vue";
       <!-- partenaires -->
 
       <div class="ml-6">
-        <div class="flex mb-9 py-4 ">
+        <div class="flex mb-9 py-4">
           <div>
             <h2
               class="athena text-xl md:text-3xl lg:text-5xl text-dark-blue pl-3"
@@ -206,43 +212,75 @@ import boutonwhite from "../components/bouton/boutonwhite.vue";
         </div>
 
         <div>
-        <div class="grid grid-cols-2 grid-rows-7">
-          <figure class="col-start-1 row-start-1">
-            <img class="w-2/6 " src="../components/partenaire/mmi.png" alt="mmi" />
-            <figcaption></figcaption>
-          </figure>
-          <figure class="col-start-2 row-start-2">
-            <img class="w-2/6" src="../components/partenaire/bde.png" alt="bde" />
-            <figcaption></figcaption>
-          </figure>
-          <figure class="col-start-1 row-start-3">
-            <img class="w-2/6" src="../components/partenaire/crous.png" alt="Crous" />
-            <figcaption></figcaption>
-          </figure>
+          <div class="grid grid-cols-2 grid-rows-7">
+            <figure class="col-start-1 row-start-1">
+              <img
+                class="w-2/6"
+                src="../components/partenaire/mmi.png"
+                alt="mmi"
+              />
+              <figcaption></figcaption>
+            </figure>
+            <figure class="col-start-2 row-start-2">
+              <img
+                class="w-2/6"
+                src="../components/partenaire/bde.png"
+                alt="bde"
+              />
+              <figcaption></figcaption>
+            </figure>
+            <figure class="col-start-1 row-start-3">
+              <img
+                class="w-2/6"
+                src="../components/partenaire/crous.png"
+                alt="Crous"
+              />
+              <figcaption></figcaption>
+            </figure>
 
-          <figure class="col-start-2 row-start-4">
-            <img class="w-2/6" src="../components/partenaire/PMA.jpg" alt="Pma" />
-            <figcaption></figcaption>
-          </figure>
-          <figure class="col-start-1 row-start-5">
-            <img class="w-2/6" src="../components/partenaire/memo.png" alt="memo" />
-            <figcaption></figcaption>
-          </figure>
-          <figure class="col-start-2 row-start-6">
-            <img class="w-2/6" src="../components/partenaire/chiken.png" alt="Pma" />
-            <figcaption></figcaption>
-          </figure>
-          <figure  class="col-start-1 row-start-7">
-            <img class="w-2/6" src="../components/partenaire/mmi25_logo 1.png" alt="Pma" />
-            <figcaption></figcaption>
-          </figure>
-        </div>
-        <div class="grid grid-cols-2 mb-4 grid-rows-7">
-          <figure class="col-start-2 row-start-1">
-            <img class="w-2/6" src="../components/partenaire/universite.jpg" alt="Pma" />
-            <figcaption></figcaption>
-          </figure>
-        </div>
+            <figure class="col-start-2 row-start-4">
+              <img
+                class="w-2/6"
+                src="../components/partenaire/PMA.jpg"
+                alt="Pma"
+              />
+              <figcaption></figcaption>
+            </figure>
+            <figure class="col-start-1 row-start-5">
+              <img
+                class="w-2/6"
+                src="../components/partenaire/memo.png"
+                alt="memo"
+              />
+              <figcaption></figcaption>
+            </figure>
+            <figure class="col-start-2 row-start-6">
+              <img
+                class="w-2/6"
+                src="../components/partenaire/chiken.png"
+                alt="Pma"
+              />
+              <figcaption></figcaption>
+            </figure>
+            <figure class="col-start-1 row-start-7">
+              <img
+                class="w-2/6"
+                src="../components/partenaire/mmi25_logo 1.png"
+                alt="Pma"
+              />
+              <figcaption></figcaption>
+            </figure>
+          </div>
+          <div class="grid grid-cols-2 mb-4 grid-rows-7">
+            <figure class="col-start-2 row-start-1">
+              <img
+                class="w-2/6"
+                src="../components/partenaire/universite.jpg"
+                alt="Pma"
+              />
+              <figcaption></figcaption>
+            </figure>
+          </div>
         </div>
       </div>
     </div>

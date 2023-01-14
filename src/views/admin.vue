@@ -1,4 +1,7 @@
 <script>
+window.onload = function () {
+  window.scrollTo(0, 0);
+};
 // Import des fonction d'authentification
 import {
   getAuth, // Fonction générale d'authentification

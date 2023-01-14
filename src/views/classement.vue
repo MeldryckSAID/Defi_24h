@@ -5,6 +5,12 @@ import tablecss from "../components/tablecss.vue";
 import f from "/src/components/f.vue";
 </script>
 
+<script>
+window.onload = function () {
+  window.scrollTo(0, 0);
+};
+</script>
+
 <template>
   <main class="h-screen">
     <div>

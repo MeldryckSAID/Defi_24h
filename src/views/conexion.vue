@@ -1,4 +1,7 @@
 <script>
+window.onload = function () {
+  window.scrollTo(0, 0);
+};
 import f from "/src/components/f.vue";
 
 import {
@@ -55,7 +58,7 @@ export default {
           };
           console.log("user  déconnect", this.user);
           this.message = "user non co ";
-           emitter.emit("deConnectUser", { user: this.user });
+          emitter.emit("deConnectUser", { user: this.user });
         })
         .catch((error) => {
           console.log("erreur  déconnect", error);
@@ -114,7 +117,13 @@ import Boutonb from "../components/bouton/boutonb.vue";
             </div>
             <div class="flex justify-around">
               <div class="">
-                <boutonb @click="onDcnx()" type="submit"> Déconnexion </boutonb>
+                <boutonb
+                  onclick="location.reload()"
+                  @click="onDcnx()"
+                  type="submit"
+                >
+                  Déconnexion
+                </boutonb>
               </div>
 
               <div class="">

@@ -2,6 +2,12 @@
 import F from "/src/components/f.vue";
 </script>
 
+<script>
+window.onload = function () {
+  window.scrollTo(0, 0);
+};
+</script>
+
 <template>
   <main>
     <div>
@@ -27,10 +33,12 @@ import F from "/src/components/f.vue";
       </div>
     </div>
 
-    <div class="md:grid md:grid-rows-3 md:grid-cols-2 lg:grid-rows-2 lg:grid-cols-3  my-5">
+    <div
+      class="md:grid md:grid-rows-3 md:grid-cols-2 lg:grid-rows-2 lg:grid-cols-3 my-5"
+    >
       <div>
         <figure>
-         <router-link class="" to="/lorem">
+          <router-link class="" to="/lorem">
             <img
               class="w-full"
               src="../assets/webp/LesProjets.webp"
@@ -101,12 +109,12 @@ import F from "/src/components/f.vue";
         <figure>
           <router-link class="" to="/">
             <img
-            class="w-full"
-            src="../assets/webp/LesProjets6.webp"
-            alt="Arnaque"
-          />
+              class="w-full"
+              src="../assets/webp/LesProjets6.webp"
+              alt="Arnaque"
+            />
           </router-link>
-          
+
           <figcaption></figcaption>
         </figure>
       </div>
