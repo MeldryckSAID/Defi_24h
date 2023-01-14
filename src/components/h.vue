@@ -29,6 +29,7 @@ export default {
       userInfo: null, // Informations complémentaires user connecté
 
       isAdmin: false, // Si l'utilisateur est ou non administrateur
+      connecter: false, // Si l'utilisateur est ou non administrateur
     };
   },
   mounted() {
@@ -54,6 +55,7 @@ export default {
       this.userInfo = null;
      
       this.isAdmin = false;
+       this.connecter = false;
     });
   },
   methods: {
@@ -93,6 +95,7 @@ export default {
         // ses informations dans la 1° cellule du tableau : 0
      
         this.isAdmin = this.userInfo[0].admin;
+        this.connecter = this.userInfo[0].connect;
        
       });
     },
@@ -167,14 +170,22 @@ const menuVisible = ref(true);
             class="hover:text-main-beige text-white my-6"
             to="/account"
             :class="{ 'text-main-beige': $route.name === 'account' }"
-            >Mon compte
+            >Connexion
           </router-link>
           <router-link
             class="hover:text-main-beige text-white my-6"
             to="/admin"
             v-if="isAdmin"
-            :class="{ 'text-main-beige': $route.name === 'account' }"
+            :class="{ 'text-main-beige': $route.name === 'admin' }"
             >Administration
+          </router-link>
+          <router-link
+            class="hover:text-main-beige text-white my-6"
+            to="/monespace"
+            v-if="connecter"
+             
+            :class="{ 'text-main-beige': $route.name === 'monespace' }"
+            >Mon Espace
           </router-link>
         </div>
       </div>
@@ -239,6 +250,12 @@ const menuVisible = ref(true);
                v-if="isAdmin"
               >Administration</router-link
             >
+            <router-link
+              class="hover:border-dark-blue hover:border-b-2 text-xl mx-4 text-black"
+              to="/monespace"
+               v-if="connecter"
+              >Mon espace</router-link
+            >
           </div>
         </div>
       </div>
@@ -302,6 +319,12 @@ const menuVisible = ref(true);
               to="/admin"
                v-if="isAdmin"
               >Administration</router-link
+            >
+            <router-link
+              class="hover:text-main-beige text-xl mx-4 text-black"
+              to="/monespace"
+               v-if="connecter"
+              >Mon espace</router-link
             >
           </div>
         </div>

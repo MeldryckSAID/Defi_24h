@@ -23,6 +23,7 @@ import inscription from "../views/inscription.vue";
 import mention from "../views/mention.vue";
 import conexion from "../views/conexion.vue";
 import admin from "../views/admin.vue";
+import monespace from "../views/monespace.vue";
 import PageNotFound from "../components/PageNotFound.vue";
 
 import buro from "../views/gal/buro.vue";
@@ -53,6 +54,12 @@ const router = createRouter({
     { path: "/conexion", name: "conexion", component: conexion },
 
     { path: "/admin", name: "admin", component: admin, beforeEnter: guard },
+    {
+      path: "/monespace",
+      name: "monespace",
+      component: monespace,
+      beforeEnter: guard2,
+    },
   ],
 });
 
@@ -76,6 +83,7 @@ function guard(to, from, next) {
           id: doc.id,
           ...doc.data(),
         }));
+
         // userInfo étant un tableau, on récupère
         // ses informations dans la 1° cellule du tableau : 0
         let isAdmin = userInfo[0].admin;
@@ -86,6 +94,46 @@ function guard(to, from, next) {
         } else {
           // Utilisateur non administrateur, renvoi sur accueil
           alert("Vous n'avez pas l'autorisation pour cette fonction");
+          next({ name: "index" });
+          return;
+        }
+      });
+    } else {
+      // Utilisateur non connecté, renvoi sur accueil
+      console.log("router NOK => user ", user);
+      next({ name: "index" });
+    }
+  });
+}
+
+function guard2(to, from, next) {
+  // recherche utilisateur connecté
+  getAuth().onAuthStateChanged(function (user) {
+    if (user) {
+      // User connecté
+      console.log("router OK => user ", user);
+      // Obtenir Firestore
+      const firestore = getFirestore();
+      // Base de données (collection)  document participant
+      const dbUsers = collection(firestore, "user");
+      // Recherche du user par son uid
+      const q = query(dbUsers, where("uiduser", "==", user.uid));
+      onSnapshot(q, (snapshot) => {
+        let userInfo = snapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+
+        // userInfo étant un tableau, on récupère
+        // ses informations dans la 1° cellule du tableau : 0
+        let connecter = userInfo[0].connect;
+        if (connecter === true) {
+          // Utilisateur administrateur, on autorise la page/vue
+          next(to.params.name);
+          return;
+        } else {
+          // Utilisateur non administrateur, renvoi sur accueil
+          alert("Vous n'avez pas l'autorisation pour cette page");
           next({ name: "index" });
           return;
         }
