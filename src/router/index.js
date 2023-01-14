@@ -1,4 +1,17 @@
 import { createRouter, createWebHistory } from "vue-router";
+
+// Fonction d'authentification
+import { getAuth } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-auth.js";
+
+// Fonctions Firestore
+import {
+  getFirestore,
+  collection,
+  onSnapshot,
+  query,
+  where,
+} from "https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js";
+
 import index from "../views/index.vue";
 import test from "../views/test.vue";
 import cla from "../views/classement.vue";
@@ -9,6 +22,7 @@ import account from "../views/account.vue";
 import inscription from "../views/inscription.vue";
 import mention from "../views/mention.vue";
 import conexion from "../views/conexion.vue";
+import admin from "../views/admin.vue";
 import PageNotFound from "../components/PageNotFound.vue";
 
 import buro from "../views/gal/buro.vue";
@@ -16,7 +30,6 @@ import lorem from "../views/gal/lorem.vue";
 import Sacimder from "../views/gal/Sacimder.vue";
 import lapin from "../views/gal/lapin.vue";
 import zinzin from "../views/gal/zinzin.vue";
-
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -38,7 +51,51 @@ const router = createRouter({
     { path: "/lapin", name: "lapin", component: lapin },
     { path: "/zinzin", name: "zinzin", component: zinzin },
     { path: "/conexion", name: "conexion", component: conexion },
+
+    { path: "/admin", name: "admin", component: admin, beforeEnter: guard },
   ],
 });
+
+// On créé un guard : Observateur (fonction) permettant de savoir si un utilisateur
+// a le droit d'utiliser une route
+// paramètres : to : d'où il vient, from où il veut aller, next où il doit aller après contrôle
+function guard(to, from, next) {
+  // recherche utilisateur connecté
+  getAuth().onAuthStateChanged(function (user) {
+    if (user) {
+      // User connecté
+      console.log("router OK => user ", user);
+      // Obtenir Firestore
+      const firestore = getFirestore();
+      // Base de données (collection)  document participant
+      const dbUsers = collection(firestore, "user");
+      // Recherche du user par son uid
+      const q = query(dbUsers, where("uiduser", "==", user.uid));
+      onSnapshot(q, (snapshot) => {
+        let userInfo = snapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        // userInfo étant un tableau, on récupère
+        // ses informations dans la 1° cellule du tableau : 0
+        let isAdmin = userInfo[0].admin;
+        if (isAdmin === true) {
+          // Utilisateur administrateur, on autorise la page/vue
+          next(to.params.name);
+          return;
+        } else {
+          // Utilisateur non administrateur, renvoi sur accueil
+          alert("Vous n'avez pas l'autorisation pour cette fonction");
+          next({ name: "index" });
+          return;
+        }
+      });
+    } else {
+      // Utilisateur non connecté, renvoi sur accueil
+      console.log("router NOK => user ", user);
+      next({ name: "index" });
+    }
+  });
+}
 
 export default router;
