@@ -98,7 +98,7 @@ export default {
         console.log("userInfo", this.userInfo);
         // userInfo étant un tableau, onn récupère
         // ses informations dans la 1° cellule du tableau : 0
-      
+
         this.isAdmin = this.userInfo[0].admin;
         // Recherche de l'image du user sur le Storage
       });
@@ -157,5 +157,30 @@ export default {
 </script>
 
 <template>
-    <h1>page admin que pour admin</h1>
+  <div>
+    <div>
+      <div class="flex mb-9 py-4 items-center justify-center">
+        <div>
+          <h1 class="athena text-3xl mb-3 text-dark-blue pl-3">
+            Administration
+          </h1>
+          <div>
+            <div class="border-2 w-3/4 bg-dark-blue border-dark-blue"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
+
+<style>
+.athena {
+  font-family: "athenaregular";
+}
+.okiner {
+  font-family: "made_okine_sans_personal_usRg";
+}
+.okinel {
+  font-family: "made_okine_sans_personal_usLt";
+}
+</style>

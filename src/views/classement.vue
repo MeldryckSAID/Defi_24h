@@ -6,7 +6,7 @@ import f from "/src/components/f.vue";
 </script>
 
 <template>
-  <main class="h-screen ">
+  <main class="h-screen">
     <div>
       <div>
         <div class="flex mb-9 py-4 items-center justify-center">
