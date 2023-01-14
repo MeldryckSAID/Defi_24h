@@ -21,7 +21,6 @@ import { emitter } from "../main.js";
 export default {
   data() {
     return {
-      MenuOpen: false,
       user: {
         // User connecté
         email: null,
@@ -156,21 +155,42 @@ export default {
 };
 </script>
 
+<script setup>
+import f from "/src/components/f.vue";
+</script>
 <template>
-  <div>
+  <main class="min-h-screen">
     <div>
-      <div class="flex mb-9 py-4 items-center justify-center">
-        <div>
-          <h1 class="athena text-3xl mb-3 text-dark-blue pl-3">
-            Administration
-          </h1>
+      <div>
+        <div class="flex mb-9 py-4 items-center justify-center">
           <div>
-            <div class="border-2 w-3/4 bg-dark-blue border-dark-blue"></div>
+            <h1 class="athena text-3xl mb-3 text-dark-blue pl-3">
+              Administration
+            </h1>
+            <div>
+              <div class="border-2 w-3/4 bg-dark-blue border-dark-blue"></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+
+    <div class="flex mb-9 py-4 items-center">
+      <div>
+        <h2 class="athena text-xl md:text-3xl lg:text-5xl text-dark-blue pl-3">
+          Les participant
+        </h2>
+
+        <div>
+          <div class="border-2 w-3/4 bg-dark-blue border-dark-blue"></div>
+        </div>
+      </div>
+    </div>
+    <section></section>
+  </main>
+  <footer>
+    <f />
+  </footer>
 </template>
 
 <style>

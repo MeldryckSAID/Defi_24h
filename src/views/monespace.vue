@@ -1,72 +1,210 @@
+<template>
+  <main>
+    <div>
+      <div>
+        <div class="flex mb-9 py-4 items-center justify-center">
+          <div>
+            <h1 class="athena text-3xl mb-3 text-dark-blue pl-3">
+              Mon espace personnel
+            </h1>
+            <div>
+              <div class="border-2 w-3/4 bg-dark-blue border-dark-blue"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1 class="Okiner text-2xl my-5 text-center w-fit m-auto">
+      {{ prenom }} {{ nom }}
+    </h1>
+    <form
+      class="flex flex-col gap-5 m-auto w-11/12 md:w-2/3 mt-20"
+      @submit.prevent="updateUser()"
+      enctype="multipart/form-data"
+    >
+      <section class="flex flex-col gap-10 w-full mb-5">
+        <div class="flex flex-col">
+          <label class="font-black">Prénom*</label>
+          <input
+            type="text"
+            class="bg-beige border-b-4 border-b-black"
+            placeholder="Prénom"
+            name="prenom"
+            v-model="prenom"
+            required
+          />
+        </div>
+        <div class="flex flex-col">
+          <label class="font-black">Nom*</label>
+          <input
+            type="text"
+            class="bg-beige border-b-4 border-b-black"
+            placeholder="Nom"
+            name="nom"
+            v-model="nom"
+            required
+          />
+        </div>
+        <div class="flex flex-col">
+          <label class="font-black">Pseudo</label>
+          <input
+            type="text"
+            class="bg-beige border-b-4 border-b-black"
+            placeholder="Pseudonyme"
+            name="pseudo"
+            v-model="pseudo"
+          />
+        </div>
+      </section>
+
+      <!--Partie 2-->
+      <h2 class="mmi-h2 text-rouge">Je souhaite...</h2>
+      <!--Partie 2-->
+
+      <div
+        class="grid grid-cols-[2%,98%] justify-items-start p-4 gap-5 items-center w-full"
+      >
+        <input
+          type="checkbox"
+          class="w-5 h-5"
+          name="soireeanniv"
+          v-model="soireeanniv"
+        />
+        <label class="uppercase">PARTICIPER À LA SOIRÉE DES 25 ANS MMI</label>
+      </div>
+
+      <div
+        class="grid grid-cols-[2%,98%] justify-items-start p-4 gap-5 items-center w-full"
+      >
+        <input type="checkbox" class="w-5 h-5" v-model="participationdefi" />
+        <label class="uppercase">PARTICIPER AU DÉFI 24H</label>
+      </div>
+
+      <div
+        class="grid grid-cols-[2%,98%] justify-items-start p-4 gap-5 items-center w-full"
+      >
+        <input type="checkbox" class="w-5 h-5" v-model="benevoledefi" />
+        <label class="uppercase">ÊTRE BÉNÉVOLE LORS DU DÉFI 24H</label>
+      </div>
+
+      <div
+        class="grid grid-cols-[2%,98%] justify-items-start p-4 gap-5 items-center w-full"
+      >
+        <input type="checkbox" class="w-5 h-5" v-model="visitedefi" />
+        <label class="uppercase">
+          Revoir et discuter avec les anciens étudiants et les professeurs LORS
+          DU DÉFI 24H</label
+        >
+      </div>
+
+      <!--PARTIE 3-->
+      <h2 class="mmi-h2 text-bleu">Je suis...</h2>
+      <!--PARTIE 3-->
+
+      <div
+        class="grid grid-cols-[2%,98%] justify-items-start p-4 gap-5 items-center w-full"
+      >
+        <input type="radio" class="w-5 h-5" v-model="role" value="etudiant" />
+        <label>Actuellement étudiant.e (MMI1, MMI2 ou LPWD)</label>
+      </div>
+
+      <div
+        class="grid grid-cols-[2%,98%] justify-items-start p-4 gap-5 items-center w-full"
+      >
+        <input
+          type="radio"
+          class="w-5 h-5"
+          v-model="role"
+          value="ancien-etudiant"
+        />
+        <label>Un.e ancien.ne étudiant.e</label>
+      </div>
+
+      <div
+        class="grid grid-cols-[2%,98%] justify-items-start p-4 gap-5 items-center w-full"
+      >
+        <input
+          type="radio"
+          class="w-5 h-5"
+          v-model="role"
+          value="autre-que-etudiant"
+        />
+        <label>Autre</label>
+      </div>
+      <RouterLink to="/">
+        <Boutonb
+          class="p-4 md:p-6 bg-black text-beige w-fit m-auto my-5 rounded-md"
+          type="submit"
+        >
+          Modifier mon profil
+        </Boutonb>
+      </RouterLink>
+    </form>
+
+    <div class="flex justify-center items-center my-20">
+      <a href="#top" class="m-auto text-center w-fit">
+        <Boutonb
+          onclick="location.reload()"
+          @click.prevent="onDcnx()"
+          class="m-auto text-center w-fit underline text-base"
+        >
+          Déconnexion
+        </Boutonb>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <f />
+  </footer>
+</template>
+
 <script>
+// Bibliothèque Firestore : import des fonctions
+// Fonctions Firestore
 
+import {
+  getFirestore,
+  collection,
+  doc,
+  updateDoc,
+  onSnapshot,
+  query,
+  where,
+} from "https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js";
 
-// Import des fonction d'authentification
 import {
   getAuth, // Fonction générale d'authentification
   signInWithEmailAndPassword, // Se connecter avec un email + mot de passe
+  createUserWithEmailAndPassword, // créer un user
   signOut, // Se deconnecter
 } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-auth.js";
 
-// Fonctions Firestore
-import { getFirestore, collection, onSnapshot, query, where } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js";
-
-// Fonctions Storage
-import { getStorage, ref, getDownloadURL } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-storage.js";
-
-// Import emetteur de main.js
-import { emitter } from "../main.js";
-
 export default {
-
   data() {
     return {
-     
+      refUser: null, // Référence de l'user à modifier
+      userInfo: null, //
       user: {
-        // User connecté
-        email: null,
+        mail: null,
         password: null,
       },
-      userInfo: null, // Informations complémentaires user connecté
-      nom: "Nom", // Titre de l'application ou nom du user
-      prenom: "prenom", // Titre de l'application ou nom du user
-     
-      isAdmin: false, // Si l'utilisateur est ou non administrateur
-      message: null, // Message de connexion
-    
-      type: "password", // Type de champs pour le password : password / text pour l'afficher
-     
+      uiduser: null,
+      prenom: "", // PRENOM USER
+      nom: "", // NOM USER
+      pseudo: "", // PSEUDO USER
+      soireeanniv: false, // PARTICIPATION OU NON SOIREE ANNIV 25 ANS
+      participationdefi: false, // PARTICIPATION OU PAS DEFI
+      benevoledefi: false, // BENEVOLE OU PAS DEFI
+      visitedefi: false, // SIMPLE VISITE DU DEFI
+      role: "", // ROLE DE L'USER
+      admin: false, // Si l'utilisateur est ou non administrateur
     };
   },
   mounted() {
-    // Montage de la vue
-    this.message = "User non connecté";
-
-    // Vérifier si un user connecté existe déjà
-    // Au lancement de l'application
     this.getUserConnect();
 
-    // Ecoute de l'évènement de connexion
-    emitter.on("connectUser", (e) => {
-      // Récupération du user
-      this.user = e.user;
-      console.log("App => Reception user connecté", this.user);
-      // Recherche infos complémentaires du user
-      this.getUserInfo(this.user);
-    });
-
-    // Ecoute de l'évènement de deconnexion
-    emitter.on("deConnectUser", (e) => {
-      // Récupération user
-      this.user = e.user;
-      console.log("App => Reception user deconnecté", this.user);
-      // Réinitialisation infos complémentaires user
-      this.userInfo = null;
-      this.nom = "Nom";
-      this.prenom = "Prénom";
-     
-      this.isAdmin = false;
-    });
+    // Montage de la vue
   },
   methods: {
     // Obtenir les informations du user connecté
@@ -81,10 +219,6 @@ export default {
           }
         }.bind(this)
       );
-      // Noter le bind(this), cas des zones isolées
-      // lors de 2 strucutres imbiquées, Vue perd la visibilité
-      // des données
-      // On les ré injecte par le mot-clef this
     },
 
     async getUserInfo(user) {
@@ -103,72 +237,52 @@ export default {
         console.log("userInfo", this.userInfo);
         // userInfo étant un tableau, onn récupère
         // ses informations dans la 1° cellule du tableau : 0
-        this.name = this.userInfo[0].login;
-        this.isAdmin = this.userInfo[0].admin;
-        // Recherche de l'image du user sur le Storage
-        const storage = getStorage();
-        // Référence du fichier avec son nom
-        const spaceRef = ref(storage, "user/" + this.userInfo[0].avatar);
-        getDownloadURL(spaceRef)
-          .then((url) => {
-            this.avatar = url;
-          })
-          .catch((error) => {
-            console.log("erreur downloadUrl", error);
-          });
+        this.uiduser = this.userInfo[0].uiduser;
+        this.prenom = this.userInfo[0].prenom;
+        this.nom = this.userInfo[0].nom;
+        this.pseudo = this.userInfo[0].pseudo;
+        this.soireeanniv = this.userInfo[0].soireeanniv;
+        this.participationdefi = this.userInfo[0].participationdefi;
+        this.benevoledefi = this.userInfo[0].benevoledefi;
+        this.visitedefi = this.userInfo[0].visitedefi;
+        this.role = this.userInfo[0].role;
       });
     },
 
-    onCnx() {
-      // Se connecter avec user et mot de passe
-      signInWithEmailAndPassword(getAuth(), this.user.email, this.user.password)
-        .then((response) => {
-          // Connexion OK - mise à jour du user
-          this.user = response.user;
-          // Emission evenement de connexion
-          emitter.emit("connectUser", { user: this.user });
-          console.log("user", this.user);
-          // Mise à jour du message
-          this.message = "User connecté : " + this.user.email;
-        })
-        .catch((error) => {
-          // Erreur de connexion
-          console.log("Erreur connexion", error);
-          this.message = "Erreur d'authentification";
-        });
+    async updateUser() {
+      const firestore = getFirestore();
+      const docRef = doc(firestore, "user", this.userInfo[0].id);
+      // Modification du participant à partir de son id
+      await updateDoc(docRef, {
+        uiduser: this.uiduser,
+        prenom: this.prenom,
+        nom: this.nom,
+        pseudo: this.pseudo,
+        soireeanniv: this.soireeanniv,
+        participationdefi: this.participationdefi,
+        benevoledefi: this.benevoledefi,
+        visitedefi: this.visitedefi,
+        role: this.role,
+      });
+      // redirection sur la liste des participants
+      //
+      this.$router.push("/");
     },
 
-    // Se deconnecter
     onDcnx() {
-      // Se déconnecter
+      //se deco
       signOut(getAuth())
         .then((response) => {
-          // Mise à jour du message
-          this.message = "User non connecté";
-          // Ré initialisation des champs
+          this.user = getAuth().currentUser;
           this.user = {
             email: null,
             password: null,
           };
-          // Emission évènement de déconnexion
-          emitter.emit("deConnectUser", { user: this.user });
         })
         .catch((error) => {
-          console.log("erreur deconnexion ", error);
+          console.log("erreur  déconnection : ", error);
         });
     },
-
-    // Affiche/masque le champs password
-    affiche() {
-      this.view = !this.view;
-      if (this.view) {
-        this.type = "text";
-      } else {
-        this.type = "password";
-      }
-    },
-
-   
   },
 };
 </script>
@@ -178,29 +292,6 @@ import Boutonb from "../components/bouton/boutonb.vue";
 
 import f from "/src/components/f.vue";
 </script>
-<template>
-  <div>
-    <div>
-      <div class="flex mb-9 py-4 items-center justify-center">
-        <div>
-          <h1 class="athena text-3xl mb-3 text-dark-blue pl-3">Mon espace</h1>
-          <div>
-            <div class="border-2 w-3/4 bg-dark-blue border-dark-blue"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="mt-8 grid place-content-center">
-    <RouterLink to="/">
-      <Boutonb type="submit" @click="onDcnx()">Deconnexion</Boutonb>
-    </RouterLink>
-  </div>
-  <footer>
-    <f />
-  </footer>
-</template>
-
 <style>
 .athena {
   font-family: "athenaregular";

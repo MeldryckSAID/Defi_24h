@@ -187,7 +187,7 @@
       </section>
 
       <!--PARTIE 3-->
-      <h2 class="text-4xl md:text-5xl  font-black text-bleu">Je suis...</h2>
+      <h2 class="text-4xl md:text-5xl font-black text-bleu">Je suis...</h2>
       <!--PARTIE 3-->
       <section class="flex flex-col gap-2">
         <div
@@ -223,16 +223,17 @@
       </section>
 
       <div
-          class="grid grid-cols-[2%,98%] justify-items-start p-4 gap-5 items-center w-full"
-        >
-          <input
-            type="checkbox" required
-            class="w-5 h-5"
-            v-model="connect"
-            value="autre-que-etudiant"
-          />
-          <label>J'accepte les conditions généraled'utilisation</label>
-        </div>
+        class="grid grid-cols-[2%,98%] justify-items-start p-4 gap-5 items-center w-full"
+      >
+        <input
+          type="checkbox"
+          required
+          class="w-5 h-5"
+          v-model="connect"
+          value="autre-que-etudiant"
+        />
+        <label>J'accepte les conditions généraled'utilisation</label>
+      </div>
 
       <!--Finalisation-->
       <div class="w-full flex flex-col gap-5 md:flex-row md:justify-evenly">
