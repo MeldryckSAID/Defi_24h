@@ -1,6 +1,6 @@
 <script setup>
-import Banderole from "@/components/banderole.vue";
-import Boutonc from "@/components/bouton/boutonc.vue";
+import Banderole from "/src/components/banderole.vue";
+import Boutonc from "/src/components/bouton/boutonc.vue";
 import f from "/src/components/f.vue";
 </script>
 <script>

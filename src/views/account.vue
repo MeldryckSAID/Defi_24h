@@ -268,7 +268,7 @@
 </template>
 
 <script setup>
-import Boutonb from "@/components/bouton/boutonb.vue";
+import Boutonb from "/src/components/bouton/boutonb.vue";
 
 import f from "/src/components/f.vue";
 </script>
