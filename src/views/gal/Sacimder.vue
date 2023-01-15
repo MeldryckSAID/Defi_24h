@@ -1,5 +1,5 @@
 <script setup>
-import Back from "../../components/svg/back.vue";
+import Back from "/components/svg/back.vue";
 import f from "/src/components/f.vue";
 </script>
 
@@ -29,7 +29,7 @@ window.onload = function () {
       <figure class="my-14 flex justify-center">
         <img
           class="w-fit"
-          src="../../assets/webp/LesProjets5.webp"
+          src="/assets/webp/LesProjets5.webp"
           alt="Sacimder"
         />
         <figcaption></figcaption>

@@ -69,7 +69,7 @@ export default {
 </script>
 
 <script setup>
-import Boutonb from "../components/bouton/boutonb.vue";
+import Boutonb from " /components/bouton/boutonb.vue";
 </script>
 
 <template>

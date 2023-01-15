@@ -1,5 +1,5 @@
 <script setup>
-import Back from "../../components/svg/back.vue";
+import Back from "/components/svg/back.vue";
 import f from "/src/components/f.vue";
 </script>
 
@@ -23,7 +23,7 @@ import f from "/src/components/f.vue";
       <figure class="my-14 flex justify-center">
         <img
           class="w-fit"
-          src="../../assets/webp/LesProjets.webp"
+          src="/assets/webp/LesProjets.webp"
           alt="Lorem Ipsum"
         />
         <figcaption></figcaption>

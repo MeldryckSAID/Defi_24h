@@ -41,7 +41,7 @@ window.onload = function () {
           <router-link class="" to="/lorem">
             <img
               class="w-full"
-              src="../assets/webp/LesProjets.webp"
+              src=" /assets/webp/LesProjets.webp"
               alt="Lorem Ipsum"
             />
           </router-link>
@@ -54,7 +54,7 @@ window.onload = function () {
           <router-link class="" to="/lapin">
             <img
               class="w-full"
-              src="../assets/webp/LesProjets2.webp"
+              src=" /assets/webp/LesProjets2.webp"
               alt="Lapin de Garenne"
             />
           </router-link>
@@ -68,7 +68,7 @@ window.onload = function () {
           <router-link class="" to="/buro">
             <img
               class="w-full"
-              src="../assets/webp/LesProjets3.webp"
+              src=" /assets/webp/LesProjets3.webp"
               alt="LeBureau"
             />
           </router-link>
@@ -82,7 +82,7 @@ window.onload = function () {
           <router-link class="" to="/zinzin">
             <img
               class="w-full"
-              src="../assets/webp/LesProjets4.webp"
+              src=" /assets/webp/LesProjets4.webp"
               alt="Les Zinzins de l’espace"
             />
           </router-link>
@@ -96,7 +96,7 @@ window.onload = function () {
           <router-link class="" to="/Sacimder">
             <img
               class="w-full"
-              src="../assets/webp/LesProjets5.webp"
+              src=" /assets/webp/LesProjets5.webp"
               alt="Sacimder"
             />
           </router-link>
@@ -110,7 +110,7 @@ window.onload = function () {
           <router-link class="" to="/arnaque">
             <img
               class="w-full"
-              src="../assets/webp/LesProjets6.webp"
+              src=" /assets/webp/LesProjets6.webp"
               alt="Arnaque"
             />
           </router-link>

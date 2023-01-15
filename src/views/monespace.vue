@@ -362,8 +362,8 @@ export default {
 </script>
 
 <script setup>
-import Boutonb from "../components/bouton/boutonb.vue";
-import Boutonc from "../components/bouton/Boutonc.vue";
+import Boutonb from " /components/bouton/boutonb.vue";
+import Boutonc from " /components/bouton/Boutonc.vue";
 
 import f from "/src/components/f.vue";
 </script>

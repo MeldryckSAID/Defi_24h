@@ -13,7 +13,7 @@ import {
 } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js";
 
 import index from "../views/index.vue";
-import test from "../views/test.vue";
+
 import cla from "../views/classement.vue";
 import cont from "../views/contact.vue";
 import who from "../views/who.vue";
@@ -37,7 +37,7 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     { path: "/", name: "home", component: index },
-    { path: "/test", name: "test", component: test },
+
     { path: "/cla", name: "classement", component: cla },
     { path: "/cont", name: "contact", component: cont },
     { path: "/who", name: "who", component: who },
