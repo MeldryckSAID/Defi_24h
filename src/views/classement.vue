@@ -1,5 +1,5 @@
 <script setup>
-import Boutonc from "@/components/bouton/boutonc.vue";
+//import Boutonc from "@/components/bouton/boutonc.vue";
 
 import tablecss from "@/components/tablecss.vue";
 import f from "/src/components/f.vue";

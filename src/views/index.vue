@@ -1,7 +1,7 @@
 <script setup>
 import timerr from "/src/components/timerr.vue";
 import F from "/src/components/f.vue";
-import boutonwhite from "../components/bouton/boutonwhite.vue";
+import boutonwhite from "@/components/bouton/boutonwhite.vue";
 </script>
 
 <script>

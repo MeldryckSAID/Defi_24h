@@ -3,6 +3,7 @@
         window.scrollTo(0, 0);
     }
 import f from "/src/components/f.vue";
+import Boutonb from "@/components/bouton/boutonb.vue";
 
 import {
   getAuth,
@@ -68,9 +69,7 @@ export default {
 };
 </script>
 
-<script setup>
-import Boutonb from "../components/bouton/boutonb.vue";
-</script>
+
 
 <template>
   <main>
