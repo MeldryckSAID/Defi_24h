@@ -1311,11 +1311,11 @@ button {
   letter-spacing: 1px;
 
   color: white;
-  background-color: transparent;
-  border: 0;
+  
+
   cursor: pointer;
 
-  border-radius: 5px;
+
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
   transition: opacity 0.2s ease;
 }

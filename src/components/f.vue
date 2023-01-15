@@ -1,31 +1,34 @@
-<script setup lang="ts">
+<script>
 import { ref } from "vue";
+import { RouterLink, RouterView } from "vue-router";
 </script>
 
 <template>
   <footer class="bg-main-blue h-1/4 py-5">
     <div class="flex flex-col justify-center items-center">
-      <h2
-        v-if="$route.name != 'inscription'"
-        class="athena text-main-beige m-5 text-center text-3xl"
-      >
-        Festival 24H
-      </h2>
+      <RouterLink to="/">
+        <h2
+          v-if="$route.name != 'inscription' && $route.name != 'account'"
+          class="athena text-main-beige m-5 text-center text-3xl"
+        >
+          Festival 24H
+        </h2>
 
-      <img
-        class="w-fit"
-        v-if="($route.name === 'inscription', 'account')"
-        src="../assets/svg/collab_collor.svg"
-        alt="Notre Logo en collaboration"
-      />
+        <img
+          class="w-fit"
+          v-if="$route.name === 'account' || $route.name === 'inscription'"
+          src="../assets/svg/collab_collor.svg"
+          alt="Notre Logo en collaboration"
+        />
+      </RouterLink>
       <div class="flex flex-row">
         <a
+          v-if="$route.name === 'account' || $route.name === 'inscription'"
           class="text-white text-lg m-3 flex justify-center"
           href="mailto:mmi25ans@gmail.com"
           >mmi25ans@gmail.com</a
         >
         <a
-          v-if="($route.name === 'inscription', 'account')"
           class="text-main-beige text-lg m-3 flex justify-center"
           href="mailto:mmidefi24h@gmail.com"
           >mmidefi24h@gmail.com</a

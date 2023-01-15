@@ -38,7 +38,7 @@
           <label class="font-black">Nom*</label>
           <input
             type="text"
-            class="bg-beige border-b-4 border-b-black"
+            class="border-b-4 border-b-black"
             placeholder="Nom"
             name="nom"
             v-model="nom"
@@ -141,6 +141,62 @@
       </RouterLink>
     </form>
 
+    <section>
+      <div class="flex ml-3 mb-9 py-4">
+        <div>
+          <h2
+            class="athena text-xl md:text-3xl lg:text-5xl text-dark-blue pl-3"
+          >
+            Projets
+          </h2>
+
+          <div>
+            <div class="border-2 w-3/4 bg-dark-blue border-dark-blue"></div>
+          </div>
+        </div>
+      </div>
+      <p class="okiner text-xl m-3 my-5">
+        Ici vous pouvez accéder aux rendus de projet.
+      </p>
+
+      <div class="flex justify-center">
+        <div
+          class="gap-5 m-5 w-3/4 lg:w-1/2 md:w-1/2 flex flex-col justify-center"
+        >
+          <input
+            class="border-b-4 border-b-black placeholder:text-slate-500 placeholder:okinel"
+            placeholder="Nom de votre Équipe"
+            name="Equipe"
+            id=""
+            cols="1"
+            rows="3"
+            v-model="nomEquipe"
+          />
+          <input
+            class="border-b-4 border-b-black placeholder:text-slate-500 placeholder:okinel"
+            placeholder="Nom de votre projet"
+            name="projet"
+            id=""
+            cols="1"
+            rows="3"
+            v-model="nomProjet"
+          />
+          <input
+            class="border-b-4 border-b-black placeholder:text-slate-500 placeholder:okinel"
+            placeholder="Lien URL de votre Projets"
+            name="Projet"
+            id=""
+            cols="1"
+            rows="3"
+            v-model="travaux"
+          />
+        </div>
+      </div>
+      <div class="flex justify-center hover:border-main-beige my-6">
+        <Boutonc type="submit">Envoyer</Boutonc>
+      </div>
+    </section>
+
     <div class="flex justify-center items-center my-20">
       <a href="#top" class="m-auto text-center w-fit">
         <Boutonb
@@ -202,6 +258,10 @@ export default {
       visitedefi: false, // SIMPLE VISITE DU DEFI
       role: "", // ROLE DE L'USER
       admin: false, // Si l'utilisateur est ou non administrateur
+      connect: true,
+      nomEquipe: null,
+      nomProjet: null,
+      travaux: null,
     };
   },
   mounted() {
@@ -222,6 +282,17 @@ export default {
           }
         }.bind(this)
       );
+    },
+
+    Createproject() {
+      const firestore = getFirestore();
+      const dbProjet = collection(firestore, "Projet");
+      const docRef = addDoc(dbProjet, {
+        nomEquipe: this.nomEquipe,
+        nomProjet: this.nomProjet,
+        travaux: this.travaux,
+      });
+      console.log("Projet envoyer");
     },
 
     async getUserInfo(user) {
@@ -292,6 +363,7 @@ export default {
 
 <script setup>
 import Boutonb from "../components/bouton/boutonb.vue";
+import Boutonc from "../components/bouton/Boutonc.vue";
 
 import f from "/src/components/f.vue";
 </script>
