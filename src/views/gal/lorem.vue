@@ -1,6 +1,6 @@
 <script setup>
 import Back from "/src/components/svg/back.vue";
-import f from "@/src/components/f.vue";
+import f from "/src/components/f.vue";
 </script>
 
 <template>
