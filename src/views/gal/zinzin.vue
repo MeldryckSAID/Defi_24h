@@ -1,4 +1,5 @@
 <script setup>
+import Back from "../../components/svg/back.vue";
 import f from "/src/components/f.vue";
 </script>
 
@@ -10,6 +11,9 @@ window.onload = function () {
 
 <template>
   <main>
+    <RouterLink to="/gal">
+      <Back class="ml-6 fixed" />
+    </RouterLink>
     <div>
       <div class="flex mb-9 py-4 items-center justify-center">
         <div>

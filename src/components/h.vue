@@ -290,37 +290,37 @@ const menuVisible = ref(true);
         <div class="flex justify-center pt-3">
           <div class="flex justify-around">
             <router-link
-              class="hover:text-main-beige text-xl mx-4 text-black"
+              class="hover:text-main-beige text-lg mx-4 text-black"
               to="/gal"
               >Galerie
             </router-link>
 
             <router-link
-              class="hover:text-main-beige text-xl mx-4 text-black"
+              class="hover:text-main-beige text-lg mx-4 text-black"
               to="/cla"
               >Classement
             </router-link>
 
             <router-link
-              class="hover:text-main-beige text-xl mx-4 text-black"
+              class="hover:text-main-beige text-lg mx-4 text-black"
               to="/who"
               >Qui sommes-nous</router-link
             >
 
             <router-link
-              class="hover:text-main-beige text-xl mx-4 text-black"
+              class="hover:text-main-beige text-lg mx-4 text-black"
               to="/cont"
               >Contact</router-link
             >
 
             <router-link
-              class="hover:text-main-beige text-xl mx-4 text-black"
+              class="hover:text-main-beige text-lg mx-4 text-black"
               to="/monespace"
               v-if="connecter"
               >Mon espace</router-link
             >
             <router-link
-              class="hover:text-main-beige text-xl mx-4 text-black"
+              class="hover:text-main-beige text-lg mx-4 text-black"
               to="/admin"
               v-if="isAdmin"
               >Administration</router-link

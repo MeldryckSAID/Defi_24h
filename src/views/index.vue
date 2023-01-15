@@ -302,7 +302,7 @@ window.onload = function () {
                 class="col-start-2 row-start-6 md:col-start-3 md:row-start-2 lg:row-start-2 lg:col-start-3"
               >
                 <img
-                  class="1/3"
+                  class=""
                   src="../components/index/master.webp"
                   alt="Master chiken"
                 />
