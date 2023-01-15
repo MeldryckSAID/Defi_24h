@@ -1,12 +1,12 @@
 <script setup>
-import Banderole from " /components/banderole.vue";
-import Boutonc from " /components/bouton/boutonc.vue";
+import Banderole from "../components/banderole.vue";
+import Boutonc from "../components/bouton/boutonc.vue";
 import f from "/src/components/f.vue";
 </script>
 <script>
-window.onload = function () {
-  window.scrollTo(0, 0);
-};
+ window.onload = function() {
+        window.scrollTo(0, 0);
+    }
 </script>
 
 <template>

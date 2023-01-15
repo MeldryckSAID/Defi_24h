@@ -1,7 +1,7 @@
 <script setup>
 import timerr from "/src/components/timerr.vue";
 import F from "/src/components/f.vue";
-import boutonwhite from " /components/bouton/boutonwhite.vue";
+import boutonwhite from "../components/bouton/boutonwhite.vue";
 </script>
 
 <script>
@@ -101,7 +101,7 @@ window.onload = function () {
               <figure>
                 <img
                   class="w-4/5"
-                  src=" /components/index/time.webp"
+                  src="../components/index/time.webp"
                   alt="rappel"
                 />
                 <figcaption>Petit rappel</figcaption>
@@ -117,7 +117,7 @@ window.onload = function () {
               <figure>
                 <img
                   class="w-4/5"
-                  src=" /components/index/groupe.webp"
+                  src="../components/index/groupe.webp"
                   alt="MMI defie de l'an passer"
                 />
                 <figcaption>MMI defie de l'an passer</figcaption>
@@ -133,7 +133,7 @@ window.onload = function () {
               <figure>
                 <img
                   class="w-4/5"
-                  src=" /components/index/25ans.webp"
+                  src="../components/index/25ans.webp"
                   alt="collaboration"
                 />
                 <figcaption>Les 25 ans du département</figcaption>
@@ -174,7 +174,7 @@ window.onload = function () {
               <figure>
                 <img
                   class="w-4/5"
-                  src=" /components/index/dance.webp"
+                  src="../components/index/dance.webp"
                   alt="Ambiance"
                 />
                 <figcaption></figcaption>
@@ -252,7 +252,7 @@ window.onload = function () {
               >
                 <img
                   class=""
-                  src=" /components/partenaire/mmi.png"
+                  src="../components/partenaire/mmi.png"
                   alt="mmi"
                 />
                 <figcaption></figcaption>
@@ -262,7 +262,7 @@ window.onload = function () {
               >
                 <img
                   class="w-2/3"
-                  src=" /components/index/N-con-Logo-quadri.webp"
+                  src="../components/index/N-con-Logo-quadri.webp"
                   alt="bde"
                 />
                 <figcaption></figcaption>
@@ -272,7 +272,7 @@ window.onload = function () {
               >
                 <img
                   class="w-2/3"
-                  src=" /components/partenaire/crous.png"
+                  src="../components/partenaire/crous.png"
                   alt="Crous"
                 />
                 <figcaption></figcaption>
@@ -283,7 +283,7 @@ window.onload = function () {
               >
                 <img
                   class=""
-                  src=" /components/partenaire/PMA.jpg"
+                  src="../components/partenaire/PMA.jpg"
                   alt="Pma"
                 />
                 <figcaption></figcaption>
@@ -293,7 +293,7 @@ window.onload = function () {
               >
                 <img
                   class=""
-                  src=" /components/partenaire/memo.png"
+                  src="../components/partenaire/memo.png"
                   alt="memo"
                 />
                 <figcaption></figcaption>
@@ -302,8 +302,8 @@ window.onload = function () {
                 class="col-start-2 row-start-6 md:col-start-3 md:row-start-2 lg:row-start-2 lg:col-start-3"
               >
                 <img
-                  class=""
-                  src=" /components/index/master.webp"
+                  class="w-1/3"
+                  src="../components/index/master.webp"
                   alt="Master chiken"
                 />
                 <figcaption></figcaption>
@@ -313,7 +313,7 @@ window.onload = function () {
               >
                 <img
                   class="w-1/2"
-                  src=" /assets/svg/25mmi.svg"
+                  src="../assets/svg/25mmi.svg"
                   alt="25 ans MMI"
                 />
                 <figcaption></figcaption>
@@ -323,7 +323,7 @@ window.onload = function () {
               >
                 <img
                   class=""
-                  src=" /components/partenaire/universite.jpg"
+                  src="../components/partenaire/universite.jpg"
                   alt="Universiter"
                 />
                 <figcaption></figcaption>

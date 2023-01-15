@@ -38,7 +38,7 @@
           <label class="font-black">Nom*</label>
           <input
             type="text"
-            class="border-b-4 border-b-black"
+            class=" border-b-4 border-b-black"
             placeholder="Nom"
             name="nom"
             v-model="nom"
@@ -160,9 +160,7 @@
       </p>
 
       <div class="flex justify-center">
-        <div
-          class="gap-5 m-5 w-3/4 lg:w-1/2 md:w-1/2 flex flex-col justify-center"
-        >
+        <div class=" gap-5 m-5 w-3/4 lg:w-1/2 md:w-1/2 flex flex-col justify-center">
           <input
             class="border-b-4 border-b-black placeholder:text-slate-500 placeholder:okinel"
             placeholder="Nom de votre Équipe"
@@ -173,7 +171,7 @@
             v-model="nomEquipe"
           />
           <input
-            class="border-b-4 border-b-black placeholder:text-slate-500 placeholder:okinel"
+            class="border-b-4 border-b-black   placeholder:text-slate-500 placeholder:okinel"
             placeholder="Nom de votre projet"
             name="projet"
             id=""
@@ -362,8 +360,8 @@ export default {
 </script>
 
 <script setup>
-import Boutonb from " /components/bouton/boutonb.vue";
-import Boutonc from " /components/bouton/Boutonc.vue";
+import Boutonb from "../components/bouton/boutonb.vue";
+import Boutonc from "../components/bouton/Boutonc.vue";
 
 import f from "/src/components/f.vue";
 </script>

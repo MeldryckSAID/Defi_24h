@@ -10,7 +10,7 @@
   >
     <!--Images 24h 25 ans mmi-->
     <section class="flex justify-center items-center my-5 gap-5">
-      <img src="/assets/svg/logo_collab.svg" alt="collaboration" />
+      <img src="../assets/svg/logo_collab.svg" alt="collaboration" />
     </section>
     <!--Images 24h 25 ans mmi-->
 
@@ -82,7 +82,7 @@
   >
     <!--Images 24h 25 ans mmi-->
     <section class="flex justify-center items-center my-5 gap-5">
-      <img src=" /assets/svg/logo_collab.svg" alt="collaboration" />
+      <img src="../assets/svg/logo_collab.svg" alt="collaboration" />
     </section>
     <!--Images 24h 25 ans mmi-->
 
@@ -268,15 +268,15 @@
 </template>
 
 <script setup>
-import Boutonb from " /components/bouton/boutonb.vue";
+import Boutonb from "../components/bouton/boutonb.vue";
 
 import f from "/src/components/f.vue";
 </script>
 
 <script>
-window.onload = function () {
-  window.scrollTo(0, 0);
-};
+ window.onload = function() {
+        window.scrollTo(0, 0);
+    }
 
 import {
   getAuth, // Fonction générale d'authentification
