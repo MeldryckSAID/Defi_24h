@@ -3,7 +3,6 @@ import { ref } from "vue";
 import { RouterLink, RouterView } from "vue-router";
 //import Logo from "./svg/logo.vue";
 
-
 import {
   getFirestore,
   collection,
@@ -53,9 +52,9 @@ export default {
       console.log("App => Reception user deconnecté", this.user);
       // Réinitialisation infos complémentaires user
       this.userInfo = null;
-     
+
       this.isAdmin = false;
-       this.connecter = false;
+      this.connecter = false;
     });
   },
   methods: {
@@ -93,18 +92,16 @@ export default {
         console.log("userInfo", this.userInfo);
         // userInfo étant un tableau, onn récupère
         // ses informations dans la 1° cellule du tableau : 0
-     
+
         this.isAdmin = this.userInfo[0].admin;
         this.connecter = this.userInfo[0].connect;
-       
       });
     },
   },
 };
 </script>
 
-<script setup >
-
+<script setup>
 const menuVisible = ref(true);
 </script>
 
@@ -172,20 +169,20 @@ const menuVisible = ref(true);
             :class="{ 'text-main-beige': $route.name === 'account' }"
             >Connexion
           </router-link>
+
+          <router-link
+            class="hover:text-main-beige text-white my-6"
+            to="/monespace"
+            v-if="connecter"
+            :class="{ 'text-main-beige': $route.name === 'monespace' }"
+            >Mon Espace
+          </router-link>
           <router-link
             class="hover:text-main-beige text-white my-6"
             to="/admin"
             v-if="isAdmin"
             :class="{ 'text-main-beige': $route.name === 'admin' }"
             >Administration
-          </router-link>
-          <router-link
-            class="hover:text-main-beige text-white my-6"
-            to="/monespace"
-            v-if="connecter"
-             
-            :class="{ 'text-main-beige': $route.name === 'monespace' }"
-            >Mon Espace
           </router-link>
         </div>
       </div>
@@ -244,17 +241,18 @@ const menuVisible = ref(true);
               to="/cont"
               >Contact</router-link
             >
-            <router-link
-              class="hover:border-dark-blue hover:border-b-2 text-xl mx-4 text-black"
-              to="/admin"
-               v-if="isAdmin"
-              >Administration</router-link
-            >
+
             <router-link
               class="hover:border-dark-blue hover:border-b-2 text-xl mx-4 text-black"
               to="/monespace"
-               v-if="connecter"
+              v-if="connecter"
               >Mon espace</router-link
+            >
+            <router-link
+              class="hover:border-dark-blue hover:border-b-2 text-xl mx-4 text-black"
+              to="/admin"
+              v-if="isAdmin"
+              >Administration</router-link
             >
           </div>
         </div>
@@ -314,17 +312,18 @@ const menuVisible = ref(true);
               to="/cont"
               >Contact</router-link
             >
-            <router-link
-              class="hover:text-main-beige text-xl mx-4 text-black"
-              to="/admin"
-               v-if="isAdmin"
-              >Administration</router-link
-            >
+
             <router-link
               class="hover:text-main-beige text-xl mx-4 text-black"
               to="/monespace"
-               v-if="connecter"
+              v-if="connecter"
               >Mon espace</router-link
+            >
+            <router-link
+              class="hover:text-main-beige text-xl mx-4 text-black"
+              to="/admin"
+              v-if="isAdmin"
+              >Administration</router-link
             >
           </div>
         </div>

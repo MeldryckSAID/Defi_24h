@@ -26,7 +26,7 @@ window.onload = function () {
         <img
           class="w-fit"
           src="../../assets/webp/LesProjets5.webp"
-          alt="Lorem Ipsum"
+          alt="Sacimder"
         />
         <figcaption></figcaption>
       </figure>
@@ -60,12 +60,10 @@ window.onload = function () {
       </div>
 
       <p class="p-4 okiner">
-        Inspiré de l’humour et du malaise de la série américaine The Office, Le
-        Bureau retrace les péripétie des 6 membres du groupe lors du défi 24h de
-        2022… Introduction, construction et garnde intrigue seront au
-        rendez-vous lors de cet épisode parodique rendant hommage au septième
-        art. Inclus avec l’épisode, la bande originale de ce dernier, un remix
-        de la bande originale de The Office.
+        Vous connaissez Vice Versa . Suivez la soutenance de projet Mi-Figue
+        Mi-Raisin de Sébastien et ses émotions Colère (Ambre), Joie (Laura),
+        Stress (Pierre) et Sarcasme (Mathis) devant trois professeurs pas
+        emballés son projet. Rester jusqu’à la fin un bêtisier vous attend.
       </p>
     </section>
 

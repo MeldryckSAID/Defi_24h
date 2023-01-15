@@ -54,12 +54,10 @@ import f from "/src/components/f.vue";
       </div>
 
       <p class="p-4 okiner">
-        Inspiré de l’humour et du malaise de la série américaine The Office, Le
-        Bureau retrace les péripétie des 6 membres du groupe lors du défi 24h de
-        2022… Introduction, construction et garnde intrigue seront au
-        rendez-vous lors de cet épisode parodique rendant hommage au septième
-        art. Inclus avec l’épisode, la bande originale de ce dernier, un remix
-        de la bande originale de The Office.
+        Retrouver les meilleurs parodies de publicité créée par l’équipe Lorem
+        Ipsum. Quel que soit le sujet Lorem Ipsum sait comment faire une parodie
+        amusante et décalée et après la pub une petite surprise vous attend et
+        après la surprise une autre surprise vous attend.
       </p>
     </section>
 

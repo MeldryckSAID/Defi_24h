@@ -28,7 +28,7 @@ window.onload = function () {
         <img
           class="w-fit"
           src="../../assets/webp/LesProjets4.webp"
-          alt="Lorem Ipsum"
+          alt="Les Zinzins de l’espace"
         />
         <figcaption></figcaption>
       </figure>
@@ -61,12 +61,9 @@ window.onload = function () {
       </div>
 
       <p class="p-4 okiner">
-        Inspiré de l’humour et du malaise de la série américaine The Office, Le
-        Bureau retrace les péripétie des 6 membres du groupe lors du défi 24h de
-        2022… Introduction, construction et garnde intrigue seront au
-        rendez-vous lors de cet épisode parodique rendant hommage au septième
-        art. Inclus avec l’épisode, la bande originale de ce dernier, un remix
-        de la bande originale de The Office.
+        Découvrez les affiches dans le thème Mi-Figue Mi-Raisin faite par
+        l’équipe des zinzin de l’espace composait de Meldryck, Laura, Morgane,
+        Héléna et Agathe.
       </p>
     </section>
 

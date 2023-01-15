@@ -31,6 +31,7 @@ import lorem from "../views/gal/lorem.vue";
 import Sacimder from "../views/gal/Sacimder.vue";
 import lapin from "../views/gal/lapin.vue";
 import zinzin from "../views/gal/zinzin.vue";
+import arnaque from "../views/gal/arnaque.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -42,7 +43,7 @@ const router = createRouter({
     { path: "/who", name: "who", component: who },
     { path: "/gal", name: "galerie", component: gal },
     { path: "/account", name: "account", component: account },
-    
+
     { path: "/mention", name: "mention", component: mention },
     { name: "NotFound", path: "/:pathMatch(.*)*", component: PageNotFound },
 
@@ -51,6 +52,8 @@ const router = createRouter({
     { path: "/Sacimder", name: "Sacimder", component: Sacimder },
     { path: "/lapin", name: "lapin", component: lapin },
     { path: "/zinzin", name: "zinzin", component: zinzin },
+    { path: "/arnaque", name: "arnaque", component: arnaque },
+
     { path: "/conexion", name: "conexion", component: conexion },
 
     { path: "/admin", name: "admin", component: admin, beforeEnter: guard },

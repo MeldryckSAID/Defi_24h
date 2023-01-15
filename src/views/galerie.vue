@@ -107,7 +107,7 @@ window.onload = function () {
 
       <div>
         <figure>
-          <router-link class="" to="/">
+          <router-link class="" to="/arnaque">
             <img
               class="w-full"
               src="../assets/webp/LesProjets6.webp"
