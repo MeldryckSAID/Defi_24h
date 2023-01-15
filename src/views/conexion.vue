@@ -35,7 +35,7 @@ export default {
       //se connecter avec un mots de pass
       signInWithEmailAndPassword(getAuth(), this.user.email, this.user.password)
         .then((response) => {
-          console.log("user connect", response.user);
+          
           this.user = response.user;
           // Emission evenement de connexion
           emitter.emit("connectUser", { user: this.user });

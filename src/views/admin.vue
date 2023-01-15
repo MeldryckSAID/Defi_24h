@@ -46,7 +46,7 @@ export default {
     emitter.on("connectUser", (e) => {
       // Récupération du user
       this.user = e.user;
-      console.log("App => Reception user connecté", this.user);
+     
       // Recherche infos complémentaires du user
       this.getUserInfo(this.user);
     });
@@ -55,7 +55,7 @@ export default {
     emitter.on("deConnectUser", (e) => {
       // Récupération user
       this.user = e.user;
-      console.log("App => Reception user deconnecté", this.user);
+      
       // Réinitialisation infos complémentaires user
       this.userInfo = null;
 
@@ -94,7 +94,7 @@ export default {
           id: doc.id,
           ...doc.data(),
         }));
-        console.log("userInfo", this.userInfo);
+        
         // userInfo étant un tableau, onn récupère
         // ses informations dans la 1° cellule du tableau : 0
 
@@ -111,7 +111,7 @@ export default {
           this.user = response.user;
           // Emission evenement de connexion
           emitter.emit("connectUser", { user: this.user });
-          console.log("user", this.user);
+         
           // Mise à jour du message
           this.message = "User connecté : " + this.user.email;
         })
