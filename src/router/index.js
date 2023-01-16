@@ -24,7 +24,8 @@ import mention from "../views/mention.vue";
 import conexion from "../views/conexion.vue";
 import admin from "../views/admin.vue";
 import monespace from "../views/monespace.vue";
-import PageNotFound from "../components/PageNotFound.vue";
+import NotFoundComponent from "../views/404.vue";
+//import PageNotFound from "../components/PageNotFound.vue";
 
 import buro from "../views/gal/buro.vue";
 import lorem from "../views/gal/lorem.vue";
@@ -45,7 +46,13 @@ const router = createRouter({
     { path: "/account", name: "account", component: account },
 
     { path: "/mention", name: "mention", component: mention },
-    { name: "NotFound", path: "/:pathMatch(.*)*", component: PageNotFound },
+
+  //  { name: "NotFound", path: "/:pathMatch(.*)*", component: PageNotFound },
+    {
+      name: "NotFound",
+      path: "/:pathMatch(.*)*",
+      component: NotFoundComponent,
+    },
 
     { path: "/buro", name: "buro", component: buro },
     { path: "/lorem", name: "lorem", component: lorem },
