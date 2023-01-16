@@ -288,6 +288,7 @@ import {
 // Fonctions Firestore
 import {
   getFirestore,
+  
   collection,
   addDoc,
 } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js";
