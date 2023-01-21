@@ -1,5 +1,5 @@
 <template>
-  <table class="border border-black grid m-8">
+  <table class="border border-black grid m-8  md:rounded-lg md:m-8 shadow-xl  shadow-neutral-500">
     <thead class="okinel">
       <tr
         class="bg-main-blue text-white grid grid-rows-1 grid-cols-3 border border-black"

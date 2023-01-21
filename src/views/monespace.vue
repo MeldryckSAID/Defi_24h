@@ -14,132 +14,153 @@
         </div>
       </div>
     </div>
-    <h1 class="Okiner text-2xl my-5 text-center w-fit m-auto">
-      {{ prenom }} {{ nom }}
-    </h1>
-    <form
-      class="flex flex-col gap-5 m-auto w-11/12 md:w-2/3 mt-20"
-      @submit.prevent="updateUser()"
-      enctype="multipart/form-data"
-    >
-      <section class="flex flex-col gap-10 w-full mb-5">
-        <div class="flex flex-col">
-          <label class="font-black">Prénom*</label>
-          <input
-            type="text"
-            class="bg-beige border-b-4 border-b-black"
-            placeholder="Prénom"
-            name="prenom"
-            v-model="prenom"
-            required
-          />
+
+    <div class=" md:rounded-lg md:m-8 shadow-xl  shadow-zinc-900">
+      <h2 class="Okiner text-2xl my-5 text-center w-fit m-auto">
+        {{ prenom }} {{ nom }}
+      </h2>
+      <form
+        class="flex flex-col gap-5 m-auto w-11/12 md:w-2/3 mt-20"
+        @submit.prevent="updateUser()"
+        enctype="multipart/form-data"
+      >
+        <section class="flex flex-col gap-10 w-full mb-5">
+          <div class="flex flex-col">
+            <label class="font-black">Prénom*</label>
+            <input
+              type="text"
+              class="bg-beige border-b-4 border-b-black"
+              placeholder="Prénom"
+              name="prenom"
+              v-model="prenom"
+              required
+            />
+          </div>
+          <div class="flex flex-col">
+            <label class="font-black">Nom*</label>
+            <input
+              type="text"
+              class="border-b-4 border-b-black"
+              placeholder="Nom"
+              name="nom"
+              v-model="nom"
+              required
+            />
+          </div>
+          <div class="flex flex-col">
+            <label class="font-black">Pseudo</label>
+            <input
+              type="text"
+              class="bg-beige border-b-4 border-b-black"
+              placeholder="Pseudonyme"
+              name="pseudo"
+              v-model="pseudo"
+            />
+          </div>
+        </section>
+
+        <div class="md:flex lg:flex">
+          <div>
+            <!--Partie 2-->
+            <h2 class="okineb text-rouge">Je souhaite...</h2>
+            <!--Partie 2-->
+
+            <div
+              class="grid grid-cols-[2%,98%] justify-items-start p-4 gap-5 items-center w-full"
+            >
+              <input
+                type="checkbox"
+                class="w-5 h-5"
+                name="soireeanniv"
+                v-model="soireeanniv"
+              />
+              <label class="uppercase"
+                >PARTICIPER À LA SOIRÉE DES 25 ANS MMI</label
+              >
+            </div>
+
+            <div
+              class="grid grid-cols-[2%,98%] justify-items-start p-4 gap-5 items-center w-full"
+            >
+              <input
+                type="checkbox"
+                class="w-5 h-5"
+                v-model="participationdefi"
+              />
+              <label class="uppercase">PARTICIPER AU DÉFI 24H</label>
+            </div>
+
+            <div
+              class="grid grid-cols-[2%,98%] justify-items-start p-4 gap-5 items-center w-full"
+            >
+              <input type="checkbox" class="w-5 h-5" v-model="benevoledefi" />
+              <label class="uppercase">ÊTRE BÉNÉVOLE LORS DU DÉFI 24H</label>
+            </div>
+
+            <div
+              class="grid grid-cols-[2%,98%] justify-items-start p-4 gap-5 items-center w-full"
+            >
+              <input type="checkbox" class="w-5 h-5" v-model="visitedefi" />
+              <label class="uppercase">
+                Revoir et discuter avec les anciens étudiants et les professeurs
+                LORS DU DÉFI 24H</label
+              >
+            </div>
+          </div>
+
+          <div>
+            <!--PARTIE 3-->
+            <h2 class="okineb text-bleu">Je suis...</h2>
+            <!--PARTIE 3-->
+
+            <div
+              class="grid grid-cols-[2%,98%] justify-items-start p-4 gap-5 items-center w-full"
+            >
+              <input
+                type="radio"
+                class="w-5 h-5"
+                v-model="role"
+                value="etudiant"
+              />
+              <label>Actuellement étudiant.e (MMI1, MMI2 ou LPWD)</label>
+            </div>
+
+            <div
+              class="grid grid-cols-[2%,98%] justify-items-start p-4 gap-5 items-center w-full"
+            >
+              <input
+                type="radio"
+                class="w-5 h-5"
+                v-model="role"
+                value="ancien-etudiant"
+              />
+              <label>Un.e ancien.ne étudiant.e</label>
+            </div>
+
+            <div
+              class="grid grid-cols-[2%,98%] justify-items-start p-4 gap-5 items-center w-full"
+            >
+              <input
+                type="radio"
+                class="w-5 h-5"
+                v-model="role"
+                value="autre-que-etudiant"
+              />
+              <label>Autre</label>
+            </div>
+          </div>
         </div>
-        <div class="flex flex-col">
-          <label class="font-black">Nom*</label>
-          <input
-            type="text"
-            class=" border-b-4 border-b-black"
-            placeholder="Nom"
-            name="nom"
-            v-model="nom"
-            required
-          />
-        </div>
-        <div class="flex flex-col">
-          <label class="font-black">Pseudo</label>
-          <input
-            type="text"
-            class="bg-beige border-b-4 border-b-black"
-            placeholder="Pseudonyme"
-            name="pseudo"
-            v-model="pseudo"
-          />
-        </div>
-      </section>
 
-      <!--Partie 2-->
-      <h2 class="mmi-h2 text-rouge">Je souhaite...</h2>
-      <!--Partie 2-->
-
-      <div
-        class="grid grid-cols-[2%,98%] justify-items-start p-4 gap-5 items-center w-full"
-      >
-        <input
-          type="checkbox"
-          class="w-5 h-5"
-          name="soireeanniv"
-          v-model="soireeanniv"
-        />
-        <label class="uppercase">PARTICIPER À LA SOIRÉE DES 25 ANS MMI</label>
-      </div>
-
-      <div
-        class="grid grid-cols-[2%,98%] justify-items-start p-4 gap-5 items-center w-full"
-      >
-        <input type="checkbox" class="w-5 h-5" v-model="participationdefi" />
-        <label class="uppercase">PARTICIPER AU DÉFI 24H</label>
-      </div>
-
-      <div
-        class="grid grid-cols-[2%,98%] justify-items-start p-4 gap-5 items-center w-full"
-      >
-        <input type="checkbox" class="w-5 h-5" v-model="benevoledefi" />
-        <label class="uppercase">ÊTRE BÉNÉVOLE LORS DU DÉFI 24H</label>
-      </div>
-
-      <div
-        class="grid grid-cols-[2%,98%] justify-items-start p-4 gap-5 items-center w-full"
-      >
-        <input type="checkbox" class="w-5 h-5" v-model="visitedefi" />
-        <label class="uppercase">
-          Revoir et discuter avec les anciens étudiants et les professeurs LORS
-          DU DÉFI 24H</label
-        >
-      </div>
-
-      <!--PARTIE 3-->
-      <h2 class="mmi-h2 text-bleu">Je suis...</h2>
-      <!--PARTIE 3-->
-
-      <div
-        class="grid grid-cols-[2%,98%] justify-items-start p-4 gap-5 items-center w-full"
-      >
-        <input type="radio" class="w-5 h-5" v-model="role" value="etudiant" />
-        <label>Actuellement étudiant.e (MMI1, MMI2 ou LPWD)</label>
-      </div>
-
-      <div
-        class="grid grid-cols-[2%,98%] justify-items-start p-4 gap-5 items-center w-full"
-      >
-        <input
-          type="radio"
-          class="w-5 h-5"
-          v-model="role"
-          value="ancien-etudiant"
-        />
-        <label>Un.e ancien.ne étudiant.e</label>
-      </div>
-
-      <div
-        class="grid grid-cols-[2%,98%] justify-items-start p-4 gap-5 items-center w-full"
-      >
-        <input
-          type="radio"
-          class="w-5 h-5"
-          v-model="role"
-          value="autre-que-etudiant"
-        />
-        <label>Autre</label>
-      </div>
-      <RouterLink to="/">
-        <Boutonb
-          class="p-4 md:p-6 bg-black text-beige w-fit m-auto my-5 rounded-md"
-          type="submit"
-        >
-          Modifier mon profil
-        </Boutonb>
-      </RouterLink>
-    </form>
+        <RouterLink to="/">
+          <Boutonb
+            class="p-4 md:p-6 bg-black text-beige w-fit m-auto my-5 rounded-md"
+            type="submit"
+          >
+            Modifier mon profil
+          </Boutonb>
+        </RouterLink>
+      </form>
+    </div>
 
     <section>
       <div class="flex ml-3 mb-9 py-4">
@@ -160,7 +181,9 @@
       </p>
 
       <div class="flex justify-center">
-        <div class=" gap-5 m-5 w-3/4 lg:w-1/2 md:w-1/2 flex flex-col justify-center">
+        <div
+          class="gap-5 m-5 w-3/4 lg:w-1/2 md:w-1/2 flex flex-col justify-center"
+        >
           <input
             class="border-b-4 border-b-black placeholder:text-slate-500 placeholder:okinel"
             placeholder="Nom de votre Équipe"
@@ -171,7 +194,7 @@
             v-model="nomEquipe"
           />
           <input
-            class="border-b-4 border-b-black   placeholder:text-slate-500 placeholder:okinel"
+            class="border-b-4 border-b-black placeholder:text-slate-500 placeholder:okinel"
             placeholder="Nom de votre projet"
             name="projet"
             id=""
@@ -194,7 +217,7 @@
         <Boutonc type="submit">Envoyer</Boutonc>
       </div>
     </section>
-
+ 
     <div class="flex justify-center items-center my-20">
       <a href="#top" class="m-auto text-center w-fit">
         <Boutonb
@@ -306,7 +329,7 @@ export default {
           id: doc.id,
           ...doc.data(),
         }));
-        
+
         // userInfo étant un tableau, onn récupère
         // ses informations dans la 1° cellule du tableau : 0
         this.uiduser = this.userInfo[0].uiduser;
@@ -374,5 +397,8 @@ import f from "/src/components/f.vue";
 }
 .okinel {
   font-family: "made_okine_sans_personal_usLt";
+}
+.okineb {
+  font-family: "made_okine_sans_personal_usBd";
 }
 </style>
