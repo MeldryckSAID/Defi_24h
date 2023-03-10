@@ -1,6 +1,6 @@
 <template>
   <table
-    class="border border-black grid m-8 md:rounded-lg md:m-8 shadow-lg shadow-neutral-500"
+    class="border border-black grid m-4 md:rounded-lg md:m-8 shadow-lg shadow-neutral-500"
   >
     <thead class="okinel">
       <tr
@@ -47,27 +47,43 @@
         <td>Team 7</td>
         <td>0 Pts</td>
       </tr>
-      <tr class="grid grid-rows-1 grid-cols-3 border border-black py-4 pl-2">
-        <td class="okiner">8.</td>
-        <td>Team 8</td>
+      <!-- <tr class="grid grid-rows-1 grid-cols-3 border border-black py-4 pl-2">
+        <td class="okiner">9.</td>
+        <td>Team 9</td>
         <td>0 Pts</td>
       </tr>
+      <tr class="grid grid-rows-1 grid-cols-3 border border-black py-4 pl-2">
+        <td class="okiner">10.</td>
+        <td>Team 10</td>
+        <td>0 Pts</td>
+      </tr>
+      <tr class="grid grid-rows-1 grid-cols-3 border border-black py-4 pl-2">
+        <td class="okiner">11.</td>
+        <td>Team 11</td>
+        <td>0 Pts</td>
+      </tr>
+      <tr class="grid grid-rows-1 grid-cols-3 border border-black py-4 pl-2">
+        <td class="okiner">12.</td>
+        <td>Team 12</td>
+        <td>0 Pts</td>
+      </tr>
+      <tr class="grid grid-rows-1 grid-cols-3 border border-black py-4 pl-2">
+        <td class="okiner">13.</td>
+        <td>Team 13</td>
+        <td>0 Pts</td>
+      </tr>
+      <tr class="grid grid-rows-1 grid-cols-3 border border-black py-4 pl-2">
+        <td class="okiner">14.</td>
+        <td>Team 14</td>
+        <td>0 Pts</td>
+      </tr>
+      <tr class="grid grid-rows-1 grid-cols-3 border border-black py-4 pl-2">
+        <td class="okiner">15.</td>
+        <td>Team 15</td>
+        <td>0 Pts</td>
+      </tr> -->
     </tbody>
   </table>
-  <!-- <div>
-    <button
-      class="m-4 p-3 border-2 border-main-beige bg-main-blue text-white"
-      id="inc"
-    >
-      +
-    </button>
-    <button
-      class="m-4 p-3 border-2 border-main-beige bg-main-blue text-white"
-      id="dec"
-    >
-      -
-    </button>
-  </div> -->
 </template>
 <script></script>
 
