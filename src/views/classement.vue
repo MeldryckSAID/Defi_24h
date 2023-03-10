@@ -13,7 +13,7 @@ window.onload = function () {
 
 <template>
   <main class="h-screen">
-    <div>
+    <div class="">
       <div>
         <div class="flex mb-9 py-4 items-center justify-center">
           <div>
@@ -40,7 +40,7 @@ window.onload = function () {
         </router-link>
       </div> -->
       <div>
-        <div>
+        <div class="my-4 py-4">
           <p class="okiner text-xl m-3 my-5">
             Découvrez le classement de votre équipe ! <br />
           </p>
@@ -48,13 +48,13 @@ window.onload = function () {
             Disponible au fur et a mesure des épreuves
           </p>
 
-          <tablecss ></tablecss>
+          <tablecss></tablecss>
         </div>
       </div>
     </div>
   </main>
 
-  <footer class="mt-36">
+  <footer class="mt-96">
     <f />
   </footer>
 </template>
