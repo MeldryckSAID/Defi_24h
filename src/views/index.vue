@@ -166,52 +166,54 @@ window.onload = function () {
             <timerdefis class="athena lg:text-7xl md:text-4xl h-32 text-xl" />
           </div>
         </div>
-        <div
-          class="m-3 grid gap-2 md:grid-rows-1 md:grid-cols-3 lg:grid-rows-1 lg:grid-cols-3"
-        >
-          <div class="flex flex-col">
-            <figure>
-              <img
-                class="w-4/5"
-                src="../components/index/ouinouin.webp"
-                alt="défi"
-              />
-              <figcaption></figcaption>
-            </figure>
-            <p class="okiner pb-2 text-left text-lg md:text-xl">
-              Dieu n'est pas avec nous <br />
-              et il déteste les corniauds <br />
-              de ton genre ...
-            </p>
-          </div>
+        <div class="flex justify-center w-full">
+          <div
+            class="m-3 grid gap-2 md:grid-rows-1 md:grid-cols-3 lg:grid-rows-1 lg:grid-cols-3"
+          >
+            <div class="flex flex-col">
+              <figure>
+                <img
+                  class="w-4/5"
+                  src="../components/index/ouinouin.webp"
+                  alt="défi"
+                />
+                <figcaption></figcaption>
+              </figure>
+              <p class="okiner pb-2 text-left text-lg md:text-xl">
+                Dieu n'est pas avec nous <br />
+                et il déteste les corniauds <br />
+                de ton genre ...
+              </p>
+            </div>
 
-          <div class="flex flex-col">
-            <figure>
-              <img
-                class="w-4/5"
-                src="../components/index/caacheee.webp"
-                alt="pas vue pas pris"
-              />
-              <figcaption></figcaption>
-            </figure>
-            <p class="okiner pb-2 text-left text-lg md:text-xl">
-              Mais ou allons nous <br />
-              Oh Oh tiens voilà quelqu'un
-            </p>
-          </div>
+            <div class="flex flex-col">
+              <figure>
+                <img
+                  class="w-4/5"
+                  src="../components/index/caacheee.webp"
+                  alt="pas vue pas pris"
+                />
+                <figcaption></figcaption>
+              </figure>
+              <p class="okiner pb-2 text-left text-lg md:text-xl">
+                Mais ou allons nous <br />
+                Oh Oh tiens voilà quelqu'un
+              </p>
+            </div>
 
-          <div class="flex flex-col">
-            <figure>
-              <img
-                class="w-4/5"
-                src="../components/index/shrek.webp"
-                alt="chance"
-              />
-              <figcaption></figcaption>
-            </figure>
-            <p class="okiner pb-2 text-left text-lg md:text-xl">
-              Ah Euh oui Bonne chance
-            </p>
+            <div class="flex flex-col">
+              <figure>
+                <img
+                  class="w-4/5"
+                  src="../components/index/shrek.webp"
+                  alt="chance"
+                />
+                <figcaption></figcaption>
+              </figure>
+              <p class="okiner pb-2 text-left text-lg md:text-xl">
+                Ah Euh oui Bonne chance
+              </p>
+            </div>
           </div>
         </div>
         <div class="flex w-full text-center justify-center">
