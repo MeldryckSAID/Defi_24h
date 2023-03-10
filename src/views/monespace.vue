@@ -15,7 +15,7 @@
       </div>
     </div>
 
-    <div class=" md:rounded-lg md:m-8 shadow-xl  shadow-zinc-900">
+    <div class=" pb-9 md:rounded-lg md:m-8 shadow-xl  shadow-zinc-900">
       <h2 class="Okiner text-2xl my-5 text-center w-fit m-auto">
         {{ prenom }} {{ nom }}
       </h2>
@@ -153,7 +153,7 @@
 
         <RouterLink to="/">
           <Boutonb
-            class="p-4 md:p-6 bg-black text-beige w-fit m-auto my-5 rounded-md"
+            class="p-4 flex  md:p-6 bg-black text-beige w-fit m-auto my-5 rounded-md"
             type="submit"
           >
             Modifier mon profil

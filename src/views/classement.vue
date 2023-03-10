@@ -42,12 +42,14 @@ window.onload = function () {
       <div>
         <div>
           <p class="okiner text-xl m-3 my-5">
-            Découvrez le classement de votre équipe !
+            Découvrez le classement de votre équipe ! <br />
+          </p>
+          <p class="okiner text-xl mx-8 my-5">
+            Disponible au fur et a mesure des épreuves
           </p>
 
           <tablecss></tablecss>
         </div>
-       
       </div>
     </div>
   </main>

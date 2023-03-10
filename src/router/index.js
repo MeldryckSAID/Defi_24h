@@ -47,7 +47,7 @@ const router = createRouter({
 
     { path: "/mention", name: "mention", component: mention },
 
-  //  { name: "NotFound", path: "/:pathMatch(.*)*", component: PageNotFound },
+    //  { name: "NotFound", path: "/:pathMatch(.*)*", component: PageNotFound },
     {
       name: "NotFound",
       path: "/:pathMatch(.*)*",
@@ -62,14 +62,6 @@ const router = createRouter({
     { path: "/arnaque", name: "arnaque", component: arnaque },
 
     { path: "/conexion", name: "conexion", component: conexion },
-
-    { path: "/admin", name: "admin", component: admin, beforeEnter: guard },
-    {
-      path: "/monespace",
-      name: "monespace",
-      component: monespace,
-      beforeEnter: guard2,
-    },
   ],
 });
 

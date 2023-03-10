@@ -149,6 +149,69 @@ window.onload = function () {
 
         <!-- évenement -->
 
+        <div class="ml-6">
+          <div class="flex mb-9 py-4 items-center">
+            <div>
+              <h2
+                class="athena text-xl md:text-3xl lg:text-5xl text-dark-blue pl-3"
+              >
+                Les défis
+              </h2>
+
+              <div>
+                <div class="border-2 w-3/4 bg-dark-blue border-dark-blue"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="m-3 grid gap-2 md:grid-rows-1 md:grid-cols-3 lg:grid-rows-1 lg:grid-cols-3"
+        >
+          <div class="flex flex-col">
+            <figure>
+              <img
+                class="w-4/5"
+                src="../components/index/ouinouin.webp"
+                alt="défi"
+              />
+              <figcaption>Défi</figcaption>
+            </figure>
+            <p class="okiner pb-2 text-left text-lg md:text-2xl">
+             DIEU N’EST PAS AVEC NOUS ET IL DÉTESTE LES CORNIAUDS DE TON GENRE
+            </p>
+          </div>
+
+          <div class="flex flex-col">
+            <figure>
+              <img
+                class="w-4/5"
+                src="../components/index/caacheee.webp"
+                alt="pas vue pas pris"
+              />
+              <figcaption>Mais ou allons nous </figcaption>
+            </figure>
+            <p class="okiner pb-2 text-left text-lg md:text-2xl">
+              Oh Oh tiens voilà quelqu'un
+            </p>
+          </div>
+
+          <div class="flex flex-col">
+            <figure>
+              <img
+                class="w-4/5"
+                src="../components/index/shrek.webp"
+                alt="chance"
+              />
+              <figcaption>Ah Euh oui </figcaption>
+            </figure>
+            <p class="okiner pb-2 text-left text-lg md:text-2xl">
+             Bonne chance
+            </p>
+          </div>
+        </div>
+
+        <!-- défi -->
         <div
           class="m-3 grid gap-2 md:grid-rows-1 md:grid-cols-2 lg:grid-rows-1 lg:grid-cols-2"
         >
