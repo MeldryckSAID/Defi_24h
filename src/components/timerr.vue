@@ -5,7 +5,7 @@
       <div
         class="flex flex-row lg:text-2xl md:text-xl text-sm justify-center gap-2 lg:gap-10"
       >
-        <p>Jours</p>
+        <p>Jour</p>
         <p>Heures</p>
         <p>Minutes</p>
         <p>Secondes</p>
