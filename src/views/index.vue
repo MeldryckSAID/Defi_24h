@@ -60,7 +60,7 @@ window.onload = function () {
           <p class="m-2 okiner pb-2 text-left text-lg md:text-2xl">
             Cet évènement phare du cursus MMI revient une nouvelle fois, et
             cette fois-ci, nous faisons les choses en grand ! <br /><br />
-            Le Défi 24H est une façon de mettre vos compétences acquises lors de
+            Le défi 24H est une façon de mettre vos compétences acquises lors de
             votre année en œuvre, mais pour une fois, seulement pour s’amuser !
             <br /><br />
             Alors n’hésitez plus et venez prouver que vous êtes le ou la
@@ -102,7 +102,7 @@ window.onload = function () {
               </figure>
               <p class="okiner pb-2 text-left text-lg md:text-2xl">
                 Comme chaque année, le défi 24h reviens pour une nouvelle
-                édition dont le thème précis restera secret jusqu’à la fin du
+                édition dont le thème précis restera secret jusqu’à la fin dû
                 compte à rebours !
               </p>
             </div>
@@ -117,7 +117,7 @@ window.onload = function () {
                 <figcaption>MMI defie de l'an passer</figcaption>
               </figure>
               <p class="okiner pb-2 text-left text-lg md:text-2xl">
-                Cette année est une édition spéciale, pour les 25 ans de MMI,
+                Cette année est une édition spéciale, pour les 25 ans de MMI;
                 les anciens étudiants et professeurs sont tout autant invités et
                 nous avons hâte de vous revoir au département !
               </p>
@@ -196,7 +196,7 @@ window.onload = function () {
                 <figcaption></figcaption>
               </figure>
               <p class="okiner pb-2 text-left text-lg md:text-xl">
-                Mais ou allons nous <br />
+                Mais où allons-nous <br />
                 Oh Oh tiens voilà quelqu'un
               </p>
             </div>
@@ -211,20 +211,21 @@ window.onload = function () {
                 <figcaption></figcaption>
               </figure>
               <p class="okiner pb-2 text-left text-lg md:text-xl">
-                Ah Euh oui Bonne chance
+                Ah euh oui bonne chance
               </p>
             </div>
           </div>
         </div>
-        <div class="flex w-full text-center justify-center">
+        <div class="flex flex-col w-full text-center items-center gap-4">
           <h4 class="okiner">
             C'est ici que vous nous déposerez vos travaux <br />
-            <a
-              class="bg-main-blue okineb text-main-beige mx-3 py-2 px-8 rounded-lg"
-              href="https://drive.google.com/drive/folders/1iys11ETVBXvscmD7hVA-gKn43_rcA-vp"
-              >ici</a
-            >
           </h4>
+          <button
+            class="bg-main-blue w-fit okineb text-main-beige mx-3 py-2 px-8 rounded-lg"
+            href="https://drive.google.com/drive/folders/1iys11ETVBXvscmD7hVA-gKn43_rcA-vp"
+          >
+            ici
+          </button>
         </div>
 
         <!-- défi -->
@@ -288,17 +289,17 @@ window.onload = function () {
             <p class="okiner py-2 text-left text-lg md:text-2xl">
               L’activité principale reste, sans surprise, le Défi 24H ! Vous
               devrez réaliser un projet en raccord avec le milieu du numérique
-              et le thème que l’on aura choisis par nos soins ! La petite
+              et le thème que l’on aura choisi par nos soins ! La petite
               particularité sera qu’il faudra réaliser ce projet en seulement
               12H !
             </p>
             <p class="okiner py-2 text-left text-lg md:text-2xl">
-              Si nous vous laissons seulement la moité du temps impartis ce
+              Si nous vous laissons seulement la moitié du temps impartit ce
               n’est pas pour vous pénaliser, mais parce qu’une soirée est prévue
               durant la nuit du Samedi au Dimanche !
             </p>
             <p class="okiner py-2 text-left text-lg md:text-2xl">
-              Et enfin pour finir, le Dimanche sera consacré à la l’annonce des
+              Et enfin pour finir, le Dimanche sera consacré à l’annonce des
               résultats du Défi 24H, mais également du concours digitale 25 ans
               organisé par nos collègues
             </p>

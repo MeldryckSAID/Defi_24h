@@ -45,7 +45,7 @@ window.onload = function () {
             Découvrez le classement de votre équipe ! <br />
           </p>
           <p class="okiner text-xl mx-8 my-5">
-            Disponible au fur et a mesure des épreuves
+            Disponible au fur et à mesure des épreuves
           </p>
 
           <tablecss></tablecss>

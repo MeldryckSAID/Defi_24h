@@ -25,10 +25,10 @@ window.onload = function () {
         </div>
       </div>
       <!-- le defie -->
-      <div>
+      <div class="pl-4">
         <!-- titre -->
-        <div>
-          <div class="flex ml-5 mb-9 py-4 items-center justify-start">
+        <div class="pl-4">
+          <div class="flex  mb-9 py-4 items-center justify-start">
             <div>
               <h2 class="athena text-3xl mb-3 text-dark-blue pl-3">
                 Le défie 24h ?
@@ -40,7 +40,7 @@ window.onload = function () {
           </div>
         </div>
 
-        <p class="okiner px-3 text-left">
+        <p class="okiner px-8 text-left">
           Étudiants en 2ème année de MMI, notre objectif commun est d’acquérir
           le plus de connaissances possible en communication, création
           numérique, développement web et audio-visuelle afin de pouvoir nous
@@ -54,9 +54,9 @@ window.onload = function () {
         </p>
       </div>
       <!-- lequipe -->
-      <div>
+      <div class="pl-4">
         <!-- titre -->
-        <div>
+        <div class="">
           <div class="flex ml-5 mb-9 py-4 items-center justify-start">
             <div>
               <h2 class="athena text-3xl mb-3 text-dark-blue pl-3">L'équipe</h2>
@@ -67,7 +67,7 @@ window.onload = function () {
           </div>
         </div>
 
-        <p class="okiner px-3 text-left">
+        <p class="okiner px-8 text-left">
           Notre équipe se décompose en trois domaines distincts. <br />
           <br />
           Nous retrouvons
