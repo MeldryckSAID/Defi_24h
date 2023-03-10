@@ -1,5 +1,6 @@
 <script setup>
 import timerr from "/src/components/timerr.vue";
+import timerdefis from "/src/components/timerdefis.vue";
 import F from "/src/components/f.vue";
 import boutonwhite from "/src/components/bouton/boutonwhite.vue";
 </script>
@@ -157,7 +158,14 @@ window.onload = function () {
             </div>
           </div>
         </div>
-
+        <div class="w-full">
+          <div class="flex flex-col justify-center">
+            <h4 class="athena text-center lg:text-4xl md:text-3xl h-32 text-xl">
+              Début du prochain défis dans
+            </h4>
+            <timerdefis class="athena lg:text-7xl md:text-4xl h-32 text-xl" />
+          </div>
+        </div>
         <div
           class="m-3 grid gap-2 md:grid-rows-1 md:grid-cols-3 lg:grid-rows-1 lg:grid-cols-3"
         >
@@ -168,10 +176,12 @@ window.onload = function () {
                 src="../components/index/ouinouin.webp"
                 alt="défi"
               />
-              <figcaption>Défi</figcaption>
+              <figcaption></figcaption>
             </figure>
-            <p class="okiner pb-2 text-left text-lg md:text-2xl">
-              DIEU N’EST PAS AVEC NOUS ET IL DÉTESTE LES CORNIAUDS DE TON GENRE
+            <p class="okiner pb-2 text-left text-lg md:text-xl">
+              Dieu n'est pas avec nous <br />
+              et il déteste les corniauds <br />
+              de ton genre ...
             </p>
           </div>
 
@@ -182,9 +192,10 @@ window.onload = function () {
                 src="../components/index/caacheee.webp"
                 alt="pas vue pas pris"
               />
-              <figcaption>Mais ou allons nous</figcaption>
+              <figcaption></figcaption>
             </figure>
-            <p class="okiner pb-2 text-left text-lg md:text-2xl">
+            <p class="okiner pb-2 text-left text-lg md:text-xl">
+              Mais ou allons nous <br />
               Oh Oh tiens voilà quelqu'un
             </p>
           </div>
@@ -196,12 +207,22 @@ window.onload = function () {
                 src="../components/index/shrek.webp"
                 alt="chance"
               />
-              <figcaption>Ah Euh oui</figcaption>
+              <figcaption></figcaption>
             </figure>
-            <p class="okiner pb-2 text-left text-lg md:text-2xl">
-              Bonne chance
+            <p class="okiner pb-2 text-left text-lg md:text-xl">
+              Ah Euh oui Bonne chance
             </p>
           </div>
+        </div>
+        <div class="flex w-full text-center justify-center">
+          <h4 class="okiner">
+            C'est ici que vous nous déposerez vos projets <br />
+            <a
+              class="bg-main-blue text-main-beige mx-3 px-4"
+              href="https://drive.google.com/drive/folders/1iys11ETVBXvscmD7hVA-gKn43_rcA-vp"
+              >ici</a
+            >.
+          </h4>
         </div>
 
         <!-- défi -->
