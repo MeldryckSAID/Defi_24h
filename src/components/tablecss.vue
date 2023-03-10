@@ -28,27 +28,27 @@
         <td>0 Pts</td>
       </tr>
       <tr class="grid grid-rows-1 grid-cols-3 border border-black py-4 pl-2">
-        <td class="okiner">3.</td>
+        <td class="okiner">4.</td>
         <td>Team 4</td>
         <td>0 Pts</td>
       </tr>
       <tr class="grid grid-rows-1 grid-cols-3 border border-black py-4 pl-2">
-        <td class="okiner">3.</td>
+        <td class="okiner">5.</td>
         <td>Team 5</td>
         <td>0 Pts</td>
       </tr>
       <tr class="grid grid-rows-1 grid-cols-3 border border-black py-4 pl-2">
-        <td class="okiner">3.</td>
+        <td class="okiner">6.</td>
         <td>Team 6</td>
         <td>0 Pts</td>
       </tr>
       <tr class="grid grid-rows-1 grid-cols-3 border border-black py-4 pl-2">
-        <td class="okiner">3.</td>
+        <td class="okiner">7.</td>
         <td>Team 7</td>
         <td>0 Pts</td>
       </tr>
       <tr class="grid grid-rows-1 grid-cols-3 border border-black py-4 pl-2">
-        <td class="okiner">3.</td>
+        <td class="okiner">8.</td>
         <td>Team 8</td>
         <td>0 Pts</td>
       </tr>
