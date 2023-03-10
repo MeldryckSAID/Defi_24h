@@ -15,7 +15,7 @@
 </template>
 
 <script>
-var deadline = new Date("12 march .2023 9:45:00").getTime();
+var deadline = new Date("11 march .2023 9:45:00").getTime();
 
 var now = new Date().getTime;
 
