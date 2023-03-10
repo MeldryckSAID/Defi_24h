@@ -218,12 +218,12 @@ window.onload = function () {
         </div>
         <div class="flex w-full text-center justify-center">
           <h4 class="okiner">
-            C'est ici que vous nous déposerez vos projets <br />
+            C'est ici que vous nous déposerez vos travaux <br />
             <a
-              class="bg-main-blue text-main-beige mx-3 px-4"
+              class="bg-main-blue okineb text-main-beige mx-3 py-2 px-8 rounded-lg"
               href="https://drive.google.com/drive/folders/1iys11ETVBXvscmD7hVA-gKn43_rcA-vp"
               >ici</a
-            >.
+            >
           </h4>
         </div>
 
@@ -424,5 +424,8 @@ window.onload = function () {
 }
 .okiner {
   font-family: "made_okine_sans_personal_usRg";
+}
+.okineb {
+  font-family: "made_okine_sans_personal_usBd";
 }
 </style>
