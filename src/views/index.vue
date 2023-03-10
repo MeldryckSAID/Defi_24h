@@ -52,13 +52,6 @@ window.onload = function () {
                     projet durant 24 heures de défis <br />
                     et d’animations
                   </p>
-                  <router-link to="/account"
-                    ><div class="flex justify-end m-3">
-                      <boutonwhite class="lg:text-3xl md:text-2xl"
-                        >Inscription
-                      </boutonwhite>
-                    </div>
-                  </router-link>
                 </div>
               </figcaption>
             </div>
@@ -178,7 +171,7 @@ window.onload = function () {
               <figcaption>Défi</figcaption>
             </figure>
             <p class="okiner pb-2 text-left text-lg md:text-2xl">
-             DIEU N’EST PAS AVEC NOUS ET IL DÉTESTE LES CORNIAUDS DE TON GENRE
+              DIEU N’EST PAS AVEC NOUS ET IL DÉTESTE LES CORNIAUDS DE TON GENRE
             </p>
           </div>
 
@@ -189,7 +182,7 @@ window.onload = function () {
                 src="../components/index/caacheee.webp"
                 alt="pas vue pas pris"
               />
-              <figcaption>Mais ou allons nous </figcaption>
+              <figcaption>Mais ou allons nous</figcaption>
             </figure>
             <p class="okiner pb-2 text-left text-lg md:text-2xl">
               Oh Oh tiens voilà quelqu'un
@@ -203,10 +196,10 @@ window.onload = function () {
                 src="../components/index/shrek.webp"
                 alt="chance"
               />
-              <figcaption>Ah Euh oui </figcaption>
+              <figcaption>Ah Euh oui</figcaption>
             </figure>
             <p class="okiner pb-2 text-left text-lg md:text-2xl">
-             Bonne chance
+              Bonne chance
             </p>
           </div>
         </div>
