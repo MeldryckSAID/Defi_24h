@@ -13,9 +13,9 @@ window.onload = function () {
 
 <template>
   <main class="min-h-screen">
-    <!-- Il vous restera. Bonne Chance   -->
+    <!-- Il vous reste. Bonne Chance   -->
     <h1 class="lg:text-7xl md:text-4xl text-2xl text-center athena">
-      Début du festival dans
+      Il vous reste. Bonne Chance
     </h1>
     <timerr class="athena lg:text-7xl md:text-4xl h-32 text-xl"></timerr>
 

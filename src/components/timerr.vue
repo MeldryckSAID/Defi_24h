@@ -15,7 +15,7 @@
 </template>
 
 <script>
-var deadline = new Date("11 march .2023 9:45:00").getTime();
+var deadline = new Date("12 march .2023 9:00:00").getTime();
 
 var now = new Date().getTime;
 
@@ -30,8 +30,8 @@ var x = setInterval(function () {
     +days + " • " + hours + " • " + minutes + " • " + seconds;
   if (t < 0) {
     clearInterval(x);
-    document.getElementById("timer").innerHTML = "Bienvenue ça commence ... Il ÉTAIT TEMPS";
+    document.getElementById("timer").innerHTML =
+      "Bienvenue ça commence ... Il ÉTAIT TEMPS";
   }
 }, 1000);
 </script>
-
