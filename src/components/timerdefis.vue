@@ -38,7 +38,10 @@ var x = setInterval(function () {
     +days + " • " + hours + " • " + minutes + " • " + seconds;
   if (t < 0) {
     clearInterval(x);
-    document.getElementById("timer2").innerHTML = "Place au défis tous sur la ligne de départ ";
+    document.getElementById("timer2").innerHTML =
+      "Place au défis tous sur la ligne de départ ";
   }
 }, 1000);
 </script>
+
+<!-- C'est fini !!!! -->

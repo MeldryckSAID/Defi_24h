@@ -13,6 +13,7 @@ window.onload = function () {
 
 <template>
   <main class="min-h-screen">
+    <!-- Il vous restera. Bonne Chance   -->
     <h1 class="lg:text-7xl md:text-4xl text-2xl text-center athena">
       Début du festival dans
     </h1>

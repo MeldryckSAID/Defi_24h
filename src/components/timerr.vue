@@ -30,7 +30,8 @@ var x = setInterval(function () {
     +days + " • " + hours + " • " + minutes + " • " + seconds;
   if (t < 0) {
     clearInterval(x);
-    document.getElementById("timer").innerHTML = "Bienvenue ça commence ";
+    document.getElementById("timer").innerHTML = "Bienvenue ça commence ... Il ÉTAIT TEMPS";
   }
 }, 1000);
 </script>
+
