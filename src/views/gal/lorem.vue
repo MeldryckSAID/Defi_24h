@@ -36,7 +36,7 @@ import f from "/src/components/f.vue";
         <br />
         <li>Jonas Morisot</li>
         <li>Nicolas Gelin</li>
-        <li>Joris Lin</li>
+        <li>Raphaël Bonin</li>
         <li>Alexandre Anthoine</li>
         <li>Simon Quiévreux</li>
         <li>Julien Ferré</li>

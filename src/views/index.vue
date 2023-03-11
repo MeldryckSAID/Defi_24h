@@ -103,7 +103,7 @@ window.onload = function () {
               </figure>
               <p class="okiner pb-2 text-left text-lg md:text-2xl">
                 Comme chaque année, le défi 24h reviens pour une nouvelle
-                édition dont le thème précis restera secret jusqu’à la fin dû
+                édition dont le thème précis restera secret jusqu’à la fin du
                 compte à rebours !
               </p>
             </div>

@@ -12,7 +12,7 @@ window.onload = function () {
 </script>
 
 <template>
-  <main class="h-screen">
+  <main class="">
     <div class="">
       <div>
         <div class="flex mb-9 py-4 items-center justify-center">
@@ -47,14 +47,17 @@ window.onload = function () {
           <p class="okiner text-xl mx-8 my-5">
             Disponible au fur et à mesure des épreuves
           </p>
-
-          <tablecss></tablecss>
+          <div class="">
+            <tablecss></tablecss>
+          </div>
         </div>
       </div>
     </div>
+    
+    
   </main>
 
-  <footer class="mt-96">
+  <footer class="">
     <f />
   </footer>
 </template>
