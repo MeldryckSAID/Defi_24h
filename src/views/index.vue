@@ -211,7 +211,7 @@ window.onload = function () {
                 Les scènes culte vous connaissez ? <br />
                 Lors de ce défi vous allez devoir <br />
                 reproduire une scène culte de film/série/dessin animée <br />
-                avec un ancien MMI!!!
+                avec un ancien MMI!!! vous avez 1h
               </p>
             </div>
 
