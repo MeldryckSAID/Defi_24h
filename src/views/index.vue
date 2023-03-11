@@ -168,14 +168,43 @@ window.onload = function () {
         </div>
         <div class="flex justify-center w-full">
           <div
-            class="m-3 grid gap-2 md:grid-rows-1 md:grid-cols-3 lg:grid-rows-1 lg:grid-cols-3"
+            class="m-3 grid gap-2 md:grid-rows-4 md:grid-cols-3 lg:grid-rows-1 lg:grid-cols-3"
           >
-            <div class="flex flex-col">
+            <div class="flex flex-col row-start-1 col-start-1">
               <figure>
                 <img
                   class="w-4/5"
-                  src="../components/index/ouinouin.webp"
+                  src="../components/index/def/creation.webp"
                   alt="défi"
+                />
+                <figcaption></figcaption>
+              </figure>
+              <p class="okiner pb-2 text-left text-lg md:text-xl">
+                Que la force soi avec vous
+              </p>
+            </div>
+
+            <div class="flex flex-col row-start-1 col-start-2">
+              <figure>
+                <img
+                  class="w-4/5"
+                  src="../components/index/def/trop_malin_c2.webp"
+                  alt="pas vue pas pris"
+                />
+                <figcaption></figcaption>
+              </figure>
+              <p class="okiner pb-2 text-left text-lg md:text-xl">
+                Ce n'est pas la réalité qui compte dans un film, <br />
+                mais ce que l'imagination peut en faire
+              </p>
+            </div>
+
+            <div class="flex flex-col row-start-1 col-start-3">
+              <figure>
+                <img
+                  class="w-4/5"
+                  src="../components/index/def/trop_malin_c3.webp"
+                  alt="chance"
                 />
                 <figcaption></figcaption>
               </figure>
@@ -186,11 +215,40 @@ window.onload = function () {
               </p>
             </div>
 
-            <div class="flex flex-col">
+            <div class="flex flex-col row-start-2 col-start-1">
               <figure>
                 <img
                   class="w-4/5"
-                  src="../components/index/caacheee.webp"
+                  src="../components/index/def/trop_malin_c4.webp"
+                  alt="pas vue pas pris"
+                />
+                <figcaption></figcaption>
+              </figure>
+              <p class="okiner pb-2 text-left text-lg md:text-xl">
+                "Pierre" ... <br />
+                Présent
+              </p>
+            </div>
+
+            <div class="flex flex-col row-start-2 col-start-2">
+              <figure>
+                <img
+                  class="w-4/5"
+                  src="../components/index/def/trop_malin_c5.webp"
+                  alt="chance"
+                />
+                <figcaption></figcaption>
+              </figure>
+              <p class="okiner pb-2 text-left text-lg md:text-xl">
+                Tu as entendu Hagrid : « suivez les araignées ! »
+              </p>
+            </div>
+
+            <div class="flex flex-col row-start-2 col-start-3">
+              <figure>
+                <img
+                  class="w-4/5"
+                  src="../components/index/def/trop_malin_c6.webp"
                   alt="pas vue pas pris"
                 />
                 <figcaption></figcaption>
@@ -201,11 +259,51 @@ window.onload = function () {
               </p>
             </div>
 
-            <div class="flex flex-col">
+            <div class="flex flex-col row-start-3 col-start-1">
               <figure>
                 <img
                   class="w-4/5"
-                  src="../components/index/shrek.webp"
+                  src="../components/index/def/trop_malin_c7.webp"
+                  alt="chance"
+                />
+                <figcaption></figcaption>
+              </figure>
+              <p class="okiner pb-2 text-left text-lg md:text-xl">
+                “Parfaitement équilibré. Comme tout devrait l'être.”
+              </p>
+            </div>
+
+            <div class="flex flex-col row-start-3 col-start-2">
+              <figure>
+                <img
+                  class="w-4/5"
+                  src="../components/index/def/trop_malin_c8.webp"
+                  alt="chance"
+                />
+                <figcaption></figcaption>
+              </figure>
+              <p class="okiner pb-2 text-left text-lg md:text-xl">Euh..</p>
+            </div>
+            <div class="flex flex-col row-start-3 col-start-3">
+              <figure>
+                <img
+                  class="w-4/5"
+                  src="../components/index/def/trop_malin_c9.webp"
+                  alt="pas vue pas pris"
+                />
+                <figcaption></figcaption>
+              </figure>
+              <p class="okiner pb-2 text-left text-lg md:text-xl">
+                Nous on te suis partout <br />
+                On va résoudre ce mystère.
+              </p>
+            </div>
+
+            <div class="flex flex-col row-start-4 col-start-1">
+              <figure>
+                <img
+                  class="w-4/5"
+                  src="../components/index/def/trop_malin_c10.webp"
                   alt="chance"
                 />
                 <figcaption></figcaption>
