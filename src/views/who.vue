@@ -31,7 +31,7 @@ window.onload = function () {
           <div class="flex  mb-9 py-4 items-center justify-start">
             <div>
               <h2 class="athena text-3xl mb-3 text-dark-blue pl-3">
-                Le défie 24h ?
+                Le défi 24h ?
               </h2>
               <div>
                 <div class="border-2 w-3/4 bg-dark-blue border-dark-blue"></div>
