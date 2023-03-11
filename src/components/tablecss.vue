@@ -15,87 +15,92 @@
       <tbody class="text-center">
         <tr class="grid grid-rows-1 grid-cols-3 border border-black py-4 pl-2">
           <td class="okiner">1.</td>
-          <td class="okiner">Dembélé</td>
-          <td class="okiner">0 Pts</td>
+          <td class="okiner">The Rock</td>
+          <td class="okiner">200 Pts</td>
         </tr>
         <tr class="grid grid-rows-1 grid-cols-3 border border-black py-4 pl-2">
           <td class="okiner">2.</td>
-          <td>Les mamammilia's</td>
-          <td>0 Pts</td>
+          <td>KSV</td>
+          <td>75 Pts</td>
         </tr>
         <tr class="grid grid-rows-1 grid-cols-3 border border-black py-4 pl-2">
           <td class="okiner">3.</td>
-          <td>Les Racoons</td>
-          <td>0 Pts</td>
+          <td>Smash or Pass</td>
+          <td>60 Pts</td>
         </tr>
         <tr class="grid grid-rows-1 grid-cols-3 border border-black py-4 pl-2">
           <td class="okiner">4.</td>
-          <td>Le club Pingouin !</td>
-          <td>0 Pts</td>
-        </tr>
-        <tr class="grid grid-rows-1 grid-cols-3 border border-black py-4 pl-2">
-          <td class="okiner">5.</td>
-          <td>Les Daltons X Marwa Vision</td>
-          <td>0 Pts</td>
-        </tr>
-        <tr class="grid grid-rows-1 grid-cols-3 border border-black py-4 pl-2">
-          <td class="okiner">6.</td>
-          <td>The Rock</td>
-          <td>0 Pts</td>
-        </tr>
-        <tr class="grid grid-rows-1 grid-cols-3 border border-black py-4 pl-2">
-          <td class="okiner">7.</td>
-          <td>Warner Bro's</td>
-          <td>0 Pts</td>
-        </tr>
-        <tr class="grid grid-rows-1 grid-cols-3 border border-black py-4 pl-2">
-          <td class="okiner">9.</td>
-          <td>Les Insoummis</td>
-          <td>0 Pts</td>
-        </tr>
-        <tr class="grid grid-rows-1 grid-cols-3 border border-black py-4 pl-2">
-          <td class="okiner">10.</td>
-          <td>Number 1</td>
-          <td>0 Pts</td>
-        </tr>
-        <tr class="grid grid-rows-1 grid-cols-3 border border-black py-4 pl-2">
-          <td class="okiner">11.</td>
-          <td>Lorem Ipsum</td>
-          <td>0 Pts</td>
-        </tr>
-        <tr class="grid grid-rows-1 grid-cols-3 border border-black py-4 pl-2">
-          <td class="okiner">12.</td>
-          <td>Smash or Pass</td>
-          <td>0 Pts</td>
-        </tr>
-        <tr class="grid grid-rows-1 grid-cols-3 border border-black py-4 pl-2">
-          <td class="okiner">13.</td>
-          <td>Les Absents</td>
-          <td>0 Pts</td>
-        </tr>
-        <tr class="grid grid-rows-1 grid-cols-3 border border-black py-4 pl-2">
-          <td class="okiner">14.</td>
           <td>Cafards Racistes</td>
           <td>0 Pts</td>
         </tr>
         <tr class="grid grid-rows-1 grid-cols-3 border border-black py-4 pl-2">
-          <td class="okiner">15.</td>
-          <td>KSV</td>
+          <td class="okiner">5.</td>
+          <td>Les Racoons</td>
           <td>0 Pts</td>
         </tr>
         <tr class="grid grid-rows-1 grid-cols-3 border border-black py-4 pl-2">
-          <td class="okiner">16.</td>
+          <td class="okiner">6.</td>
+          <td>Le club Pingouin !</td>
+          <td>0 Pts</td>
+        </tr>
+        <tr class="grid grid-rows-1 grid-cols-3 border border-black py-4 pl-2">
+          <td class="okiner">7.</td>
+          <td>Les mamammilia's</td>
+          <td>0 Pts</td>
+        </tr>
+        <tr class="grid grid-rows-1 grid-cols-3 border border-black py-4 pl-2">
+          <td class="okiner">9.</td>
           <td>R210</td>
           <td>0 Pts</td>
         </tr>
         <tr class="grid grid-rows-1 grid-cols-3 border border-black py-4 pl-2">
+          <td class="okiner">10.</td>
+          <td>TARIN </td>
+          <td>0 Pts</td>
+        </tr>
+        <tr class="grid grid-rows-1 grid-cols-3 border border-black py-4 pl-2">
+          <td class="okiner">11.</td>
+          <td>Les Daltons X Marwa Vision</td>
+          <td>0 Pts</td>
+        </tr>
+        <tr class="grid grid-rows-1 grid-cols-3 border border-black py-4 pl-2">
+          <td class="okiner">12.</td>
+          <td>Warner Bro's</td>
+          <td>0 Pts</td>
+        </tr>
+        <tr class="grid grid-rows-1 grid-cols-3 border border-black py-4 pl-2">
+          <td class="okiner">13.</td>
+          <td>Dembélé</td>
+          <td>0 Pts</td>
+        </tr>
+        <tr class="grid grid-rows-1 grid-cols-3 border border-black py-4 pl-2">
+          <td class="okiner">14.</td>
+          <td>TARPIN</td>
+          <td>0 Pts</td>
+        </tr>
+        <tr class="grid grid-rows-1 grid-cols-3 border border-black py-4 pl-2">
+          <td class="okiner">15.</td>
+          <td>La Fraude</td>
+          <td>0 Pts</td>
+        </tr>
+        <tr class="grid grid-rows-1 grid-cols-3 border border-black py-4 pl-2">
+          <td class="okiner">16.</td>
+          <td>Les Insoummis </td>
+          <td>0 Pts</td>
+        </tr>
+        <tr class="grid grid-rows-1 grid-cols-3 border border-black py-4 pl-2">
           <td class="okiner">17.</td>
-          <td>TARIN</td>
+          <td>N°1</td>
           <td>0 Pts</td>
         </tr>
         <tr class="grid grid-rows-1 grid-cols-3 border border-black py-4 pl-2">
           <td class="okiner">18.</td>
-          <td>TARPIN</td>
+          <td>Lorem Ipsum</td>
+          <td>0 Pts</td>
+        </tr>
+        <tr class="grid grid-rows-1 grid-cols-3 border border-black py-4 pl-2">
+          <td class="okiner">18.</td>
+          <td>Les Absents </td>
           <td>0 Pts</td>
         </tr>
       </tbody>
