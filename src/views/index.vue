@@ -207,10 +207,10 @@ window.onload = function () {
                 Ce n'est pas la réalité qui compte dans un film, <br />
                 mais ce que l'imagination peut en faire
               </p>
-               <p class="okiner pb-2 text-left text-lg md:text-xl">
-                Les scènes culte vous connaissez ? </br>
-                Lors de ce défi vous allez devoir </br>
-                reproduire une scène culte de film/série/dessin animée </br>
+              <p class="okiner pb-2 text-left text-lg md:text-xl">
+                Les scènes culte vous connaissez ? <br />
+                Lors de ce défi vous allez devoir <br />
+                reproduire une scène culte de film/série/dessin animée <br />
                 avec un ancien MMI!!!
               </p>
             </div>
