@@ -213,7 +213,7 @@ window.onload = function () {
               <figure>
                 <img
                   class="w-4/5"
-                  src="../components/index/def/trop_malin_c3.webp"
+                  src="../components/index/def/1/cowboy.png"
                   alt="chance"
                 />
                 <figcaption></figcaption>
