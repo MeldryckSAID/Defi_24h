@@ -227,8 +227,6 @@ window.onload = function () {
                 Nous vous défions lors d'un duel digne des plus grands western !
                 Malheureusement pour vous, il sera difficile de gagner des
                 points dans ce défi... <br />
-                Ce défi s'intitule "Dessin sur pierre", il n'y aura pas plus de
-                détails, bonne chance.
               </p>
             </div>
 
