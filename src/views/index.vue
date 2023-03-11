@@ -219,9 +219,16 @@ window.onload = function () {
                 <figcaption></figcaption>
               </figure>
               <p class="okiner pb-2 text-left text-lg md:text-xl">
-                Dieu n'est pas avec nous <br />
+                " Dieu n'est pas avec nous <br />
                 et il déteste les corniauds <br />
-                de ton genre ...
+                de ton genre ..."
+              </p>
+              <p class="okiner pb-2 text-left text-lg md:text-xl">
+                Nous vous défions lors d'un duel digne des plus grands western !
+                Malheureusement pour vous, il sera difficile de gagner des
+                points dans ce défi... <br />
+                Ce défi s'intitule "Dessin sur pierre", il n'y aura pas plus de
+                détails, bonne chance.
               </p>
             </div>
 
