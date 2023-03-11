@@ -23,7 +23,7 @@
 <!-- 12 march .2023 5:00:00 -->
 <!-- 12 march .2023 7:00:00 -->
 <script>
-var deadline = new Date("11 march .2023 9:30:00").getTime();
+var deadline = new Date("11 march .2023 15:00:00").getTime();
 
 var now = new Date().getTime;
 
