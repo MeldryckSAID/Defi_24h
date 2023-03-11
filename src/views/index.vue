@@ -183,6 +183,15 @@ window.onload = function () {
               <p class="okiner pb-2 text-left text-lg md:text-xl">
                 Que la force soit avec vous
               </p>
+              <p class="okiner pb-2 text-left text-lg md:text-xl">
+                Pour ce premier défi, vous avez 30min afin de créer votre plus
+                belle affiche d'équipe. <br />
+                Attention, celle-ci vous représentera jusqu'à la fin de
+                l'évènement ! <br />
+                Vous devrez y représenter le nom de votre équipe, le nom de
+                chacun de vous, ainsi que quelque chose désignant chacun d'entre
+                vous
+              </p>
             </div>
 
             <div class="flex flex-col row-start-1 col-start-2">
