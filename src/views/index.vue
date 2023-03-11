@@ -180,7 +180,7 @@ window.onload = function () {
                 <figcaption></figcaption>
               </figure>
               <p class="okiner pb-2 text-left text-lg md:text-xl">
-                Que la force soi avec vous
+                Que la force soit avec vous
               </p>
             </div>
 
@@ -240,7 +240,8 @@ window.onload = function () {
                 <figcaption></figcaption>
               </figure>
               <p class="okiner pb-2 text-left text-lg md:text-xl">
-                Tu as entendu Hagrid : « suivez les araignées ! »
+                Tu as entendu Hagrid : <br />
+                « suivez les araignées ! »
               </p>
             </div>
 

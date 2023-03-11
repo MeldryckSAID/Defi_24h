@@ -21,7 +21,7 @@
 <!-- 12 march .2023 2:00:00 -->
 <!-- 12 march .2023 3:30:00 -->
 <!-- 12 march .2023 5:00:00 -->
-<!-- 12 march .2023 5:00:00 -->
+<!-- 12 march .2023 7:00:00 -->
 <script>
 var deadline = new Date("11 march .2023 9:30:00").getTime();
 
@@ -38,7 +38,7 @@ var x = setInterval(function () {
     +days + " • " + hours + " • " + minutes + " • " + seconds;
   if (t < 0) {
     clearInterval(x);
-    document.getElementById("timer2").innerHTML = "Bienvenue ça commence ";
+    document.getElementById("timer2").innerHTML = "Place au défis tous sur la ligne de départ ";
   }
 }, 1000);
 </script>
