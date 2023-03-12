@@ -255,7 +255,7 @@ window.onload = function () {
               <figure>
                 <img
                   class="w-4/5"
-                  src="../components/index/def/trop_malin_c5.webp"
+                  src="../components/index/def/1/la mouche.png"
                   alt="chance"
                 />
                 <figcaption></figcaption>
@@ -285,7 +285,7 @@ window.onload = function () {
               <figure>
                 <img
                   class="w-4/5"
-                  src="../components/index/def/trop_malin_c7.webp"
+                  src="../components/index/def/1/effel.png"
                   alt="chance"
                 />
                 <figcaption></figcaption>
