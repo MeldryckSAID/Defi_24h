@@ -270,7 +270,7 @@ window.onload = function () {
               <figure>
                 <img
                   class="w-4/5"
-                  src="../components/index/def/trop_malin_c6.webp"
+                  src="../components/index/def/1/pirate.png"
                   alt="pas vue pas pris"
                 />
                 <figcaption></figcaption>
