@@ -15,7 +15,7 @@ window.onload = function () {
   <main class="min-h-screen">
     <!-- Il vous reste. Bonne Chance   -->
     <h1 class="lg:text-7xl md:text-4xl text-2xl text-center athena">
-      Il vous reste. Bonne Chance
+     C'est fini 
     </h1>
     <timerr class="athena lg:text-7xl md:text-4xl h-32 text-xl"></timerr>
 
@@ -240,7 +240,7 @@ window.onload = function () {
               <figure>
                 <img
                   class="w-4/5"
-                  src="../components/index/def/trop_malin_c4.webp"
+                  src="../components/index/def/1/Korg.png"
                   alt="pas vue pas pris"
                 />
                 <figcaption></figcaption>
@@ -299,7 +299,7 @@ window.onload = function () {
               <figure>
                 <img
                   class="w-4/5"
-                  src="../components/index/def/trop_malin_c8.webp"
+                  src="../components/index/def/1/shrek.png"
                   alt="chance"
                 />
                 <figcaption></figcaption>
@@ -310,7 +310,7 @@ window.onload = function () {
               <figure>
                 <img
                   class="w-4/5"
-                  src="../components/index/def/trop_malin_c9.webp"
+                  src="../components/index/def/1/scooby.png"
                   alt="pas vue pas pris"
                 />
                 <figcaption></figcaption>
@@ -325,7 +325,7 @@ window.onload = function () {
               <figure>
                 <img
                   class="w-4/5"
-                  src="../components/index/def/trop_malin_c10.webp"
+                  src="../components/index/def/1/pompe.png"
                   alt="chance"
                 />
                 <figcaption></figcaption>
